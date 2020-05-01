@@ -1,0 +1,9 @@
+{
+  "name": "joshuadavidnordstrom",
+  "version": "0.0.1",
+  "description": "A personal website",
+  "main": "index.js",
+  "repository": "https://github.com/jdnordy/joshuadavidnordstrom.git",
+  "author": "Joshua Nordstrom <jdnordy@gmail.com>",
+  "license": "MIT"
+}
