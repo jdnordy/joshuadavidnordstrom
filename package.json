@@ -5,5 +5,20 @@
   "main": "index.js",
   "repository": "https://github.com/jdnordy/joshuadavidnordstrom.git",
   "author": "Joshua Nordstrom <jdnordy@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.34",
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.4",
+    "typescript": "^3.8.3"
+  }
 }
