@@ -1,13 +1,14 @@
 import React from "react";
-import Link from "next/link";
+// import components
+import { Navbar } from "../components";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Welcome to Next.js!</h1>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
+    <div className="main">
+      <Navbar page={"joshuadavid"} />
+      <section>
+        <h1>Welcome to Next.js!</h1>
+      </section>
     </div>
   );
 };
