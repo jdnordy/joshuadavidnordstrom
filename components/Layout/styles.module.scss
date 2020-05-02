@@ -1,4 +1,21 @@
+// desktop optimization
 .container {
   display: flex;
   justify-content: center;
+  section {
+    width: 50%;
+    min-width: 320px;
+    padding: 0 2rem;
+    h1 {
+      text-align: left;
+    }
+  }
+}
+
+// tablet optimization
+@media (min-width: 768px) and (max-width: 961px) {
+}
+
+// mobile optimization
+@media (min-width: 320px) {
 }
