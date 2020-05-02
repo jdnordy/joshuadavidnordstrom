@@ -1,14 +1,16 @@
 import React from "react";
 // import components
-import { Navbar } from "../components";
+import { Leftnav } from "../components";
+import { Rightnav } from "../components";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="main">
-      <Navbar page={"joshuadavid"} />
+    <div className="container">
+      <Leftnav page={"joshuadavid"} />
       <section>
-        <h1>Welcome to Next.js!</h1>
+        <h1>joshua david nordstrom</h1>
       </section>
+      <Rightnav />
     </div>
   );
 };

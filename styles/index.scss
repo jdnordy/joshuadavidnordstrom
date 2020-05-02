@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  section {
+    width: 70%;
+    min-width: 320px;
+    h1 {
+      text-align: center;
+    }
+  }
+}
