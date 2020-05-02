@@ -1,18 +1,13 @@
 import React from "react";
 // import components
-import { Leftnav } from "../components";
-import { Rightnav } from "../components";
+import { App } from "../components";
 
-const HomePage: React.FC = () => {
-  return (
-    <div className="container">
-      <Leftnav page={"joshuadavid"} />
-      <section>
-        <h1>joshua david nordstrom</h1>
-      </section>
-      <Rightnav />
-    </div>
-  );
-};
+const JoshuaDavid: React.FC = () => (
+  <App page="joshua">
+    <section>
+      <h1>joshua david nordstrom</h1>
+    </section>
+  </App>
+);
 
-export default HomePage;
+export default JoshuaDavid;

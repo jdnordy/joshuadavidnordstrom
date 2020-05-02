@@ -7,13 +7,13 @@ type Props = {
   page: string;
 };
 const Leftnav: React.FC<Props> = ({ page }) => {
-  const pages = ["joshuadavid", "writings", "works"];
+  const pages = ["joshua", "writings", "works"];
 
   return (
     <header className={styles.leftnav}>
       {pages.map((el, i) => {
         // generate the link
-        const link = el === "joshuadavid" ? "/" : `/${el}`;
+        const link = el === "joshua" ? "/" : `/${el}`;
         // determine which pages is selected
         const className = el === page ? styles.selected : "a";
         return (

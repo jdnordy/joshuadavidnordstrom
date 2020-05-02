@@ -1,17 +1,18 @@
 import React from "react";
-
+// COMPONENETS
 import { Leftnav, Rightnav } from "../";
+// STYLES
+import styles from "./styles.module.scss";
 
 type Props = {
-  Component: React.FC;
   page: string;
 };
 
-const App: React.FC<Props> = ({ Component, page }) => {
+const App: React.FC<Props> = ({ page, children }) => {
   return (
-    <div className="container">
+    <div className={styles.container}>
       <Leftnav page={page} />
-      <Component />
+      {children}
       <Rightnav />
     </div>
   );
