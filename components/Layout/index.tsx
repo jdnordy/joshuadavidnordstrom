@@ -8,7 +8,7 @@ type Props = {
   page: string;
 };
 
-const App: React.FC<Props> = ({ page, children }) => {
+const Layout: React.FC<Props> = ({ page, children }) => {
   return (
     <div className={styles.container}>
       <Leftnav page={page} />
@@ -18,4 +18,4 @@ const App: React.FC<Props> = ({ page, children }) => {
   );
 };
 
-export default App;
+export default Layout;

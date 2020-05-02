@@ -1,13 +1,13 @@
 import React from "react";
 // import components
-import { App } from "../components";
+import { Layout } from "../components";
 
 const JoshuaDavid: React.FC = () => (
-  <App page="joshua">
+  <Layout page="joshua">
     <section>
       <h1>joshua david nordstrom</h1>
     </section>
-  </App>
+  </Layout>
 );
 
 export default JoshuaDavid;

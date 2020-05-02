@@ -1,6 +1,6 @@
 import Leftnav from "./Leftnav";
 import Rightnav from "./Rightnav";
-import App from "./App";
+import Layout from "./Layout";
 import Navigator from "./Navigator";
 
-export { Leftnav, Rightnav, App, Navigator };
+export { Leftnav, Rightnav, Layout, Navigator };
