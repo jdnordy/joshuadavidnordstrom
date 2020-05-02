@@ -14,8 +14,6 @@ const Navigator: React.FC<Props> = ({ link, selected, label }) => (
     <div className={styles.navigator}>
       <svg
         viewBox="0 0 100 100"
-        height="8px"
-        width="8px"
         xmlns="http://www.w3.org/2000/svg"
         className={selected ? styles.selected : ""}
       >

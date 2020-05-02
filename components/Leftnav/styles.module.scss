@@ -1,7 +1,14 @@
+@import "../../styles/variables";
+
 .leftnav {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 25%;
+  min-width: 120px;
+  height: min-content;
   align-items: flex-end;
   margin-top: 2rem;
+  border-right: 1px solid $text-color;
+  padding-right: 8px;
+  box-sizing: border-box;
 }
