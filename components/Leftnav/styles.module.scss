@@ -4,14 +4,4 @@
   width: 15%;
   align-items: flex-end;
   margin-top: 2rem;
-  a {
-    color: black;
-    text-decoration: none;
-    &.selected {
-      text-decoration: underline;
-    }
-    &:hover {
-      text-decoration: underline dotted;
-    }
-  }
 }
