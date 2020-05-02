@@ -1,5 +1,7 @@
 import React from "react";
-import Link from "next/link";
+// components
+import { Navigator } from "../";
+import navigators from "./navigators.config";
 // styles
 import styles from "./styles.module.scss";
 
@@ -7,21 +9,11 @@ type Props = {
   page: string;
 };
 const Leftnav: React.FC<Props> = ({ page }) => {
-  const pages = ["joshua", "writings", "creations"];
-
   return (
     <header className={styles.leftnav}>
-      {pages.map((el, i) => {
-        // generate the link
-        const link = el === "joshua" ? "/" : `/${el}`;
-        // determine which pages is selected
-        const className = el === page ? styles.selected : "a";
-        return (
-          <Link href={link} key={i}>
-            <a className={className}>{el}</a>
-          </Link>
-        );
-      })}
+      {navigators.map((el, i) => (
+        <Navigator selected={el.value === page} {...el} />
+      ))}
     </header>
   );
 };
