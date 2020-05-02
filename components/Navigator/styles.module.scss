@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.navigator {
+  cursor: pointer;
+  a {
+    color: $text-color;
+    text-decoration: none;
+    &.selected {
+      text-decoration: underline;
+    }
+    &:hover {
+      text-decoration: underline dotted;
+    }
+  }
+}
