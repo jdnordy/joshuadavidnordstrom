@@ -7,7 +7,7 @@ type Props = {
   page: string;
 };
 const Leftnav: React.FC<Props> = ({ page }) => {
-  const pages = ["joshua", "writings", "works"];
+  const pages = ["joshua", "writings", "creations"];
 
   return (
     <header className={styles.leftnav}>
