@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 // COMPONENETS
-import { Leftnav, Rightnav } from "../";
+import { Leftnav, Rightnav } from '../';
 // STYLES
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 type Props = {
   page: string;

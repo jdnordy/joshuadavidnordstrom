@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Layout } from "../../components";
+import { Layout } from '../../components';
 
 const Works: React.FC = () => (
   <Layout page="creations">
