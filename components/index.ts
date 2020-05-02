@@ -1,3 +1,4 @@
-import Navbar from "./Navbar";
+import Leftnav from "./Leftnav";
+import Rightnav from "./Rightnav";
 
-export { Navbar };
+export { Leftnav, Rightnav };
