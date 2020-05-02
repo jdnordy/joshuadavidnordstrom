@@ -2,14 +2,27 @@
 
 .navigator {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    svg {
+      display: block;
+      fill: rgb(154, 218, 255);
+    }
+  }
+  svg {
+    margin-right: 6px;
+    height: 8px;
+    width: 8px;
+    fill: rgb(0, 0, 104);
+    display: none;
+    &.selected {
+      display: block;
+    }
+  }
   a {
     color: $text-color;
     text-decoration: none;
-    &.selected {
-      text-decoration: underline;
-    }
-    &:hover {
-      text-decoration: underline dotted;
-    }
+    font-variant: small-caps;
   }
 }

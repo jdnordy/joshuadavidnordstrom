@@ -1,16 +1,16 @@
 const navigtors = [
   {
-    label: "JOSHUA",
+    label: "Joshua",
     link: "/",
     value: "joshua",
   },
   {
-    label: "WRITINGS",
+    label: "Writings",
     link: "/writings",
     value: "writings",
   },
   {
-    label: "CREATIONS",
+    label: "Creations",
     link: "/creations",
     value: "creations",
   },

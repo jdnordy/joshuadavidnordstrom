@@ -12,7 +12,16 @@ type Props = {
 const Navigator: React.FC<Props> = ({ link, selected, label }) => (
   <Link href={link}>
     <div className={styles.navigator}>
-      <a className={selected ? styles.selected : ""}>{label}</a>
+      <svg
+        viewBox="0 0 100 100"
+        height="8px"
+        width="8px"
+        xmlns="http://www.w3.org/2000/svg"
+        className={selected ? styles.selected : ""}
+      >
+        <circle cx="50" cy="50" r="50" />
+      </svg>
+      <a>{label}</a>
     </div>
   </Link>
 );
