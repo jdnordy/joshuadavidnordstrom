@@ -1,19 +1,17 @@
 import React from "react";
 
-import { Leftnav } from "../../components";
-import { Rightnav } from "../../components";
+import { App } from "../../components";
 
-const Writings: React.FC = () => {
-  return (
-    <div className="container">
-      <Leftnav page={"writings"} />
-      <section>
-        <h1>Writings</h1>
-        <p>Here will be a list</p>
-      </section>
-      <Rightnav />
-    </div>
-  );
-};
+const Writings: React.FC = () => (
+  <App page="writings">
+    <section>
+      <h1>Writings</h1>
+      <ul>
+        <li>Newest Writing</li>
+        <li>Oldest Writing</li>
+      </ul>
+    </section>
+  </App>
+);
 
 export default Writings;

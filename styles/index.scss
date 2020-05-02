@@ -1,12 +1,15 @@
-.container {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  section {
-    width: 70%;
-    min-width: 320px;
-    h1 {
-      text-align: center;
-    }
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(250, 250, 250);
+  color: rgb(10, 10, 10);
+}
+
+section {
+  width: 70%;
+  min-width: 320px;
+  padding: 0 2rem;
+  h1 {
+    text-align: left;
   }
 }
