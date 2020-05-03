@@ -5,7 +5,7 @@ import { Layout } from '../../components';
 const Writings: React.FC = () => (
   <Layout page="writings">
     <main>
-      <h1>Writings</h1>
+      <h1>WRITINGS</h1>
       <ul>
         <li>Newest Writing</li>
         <li>Oldest Writing</li>
