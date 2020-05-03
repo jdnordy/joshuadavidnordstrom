@@ -6,9 +6,9 @@ import styles from './styles.module.scss';
 type Props = {};
 const Rightnav: React.FC<Props> = () => {
   return (
-    <header className={styles.rightnav}>
+    <nav className={styles.rightnav}>
       <span>Right Nav</span>
-    </header>
+    </nav>
   );
 };
 
