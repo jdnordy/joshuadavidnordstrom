@@ -10,11 +10,11 @@ type Props = {
 };
 
 const Leftnav: React.FC<Props> = ({ page }) => (
-  <header className={styles.leftnav}>
+  <nav className={styles.leftnav}>
     {navigators.map((el, i) => (
       <Navigator selected={el.value === page} {...el} />
     ))}
-  </header>
+  </nav>
 );
 
 export default Leftnav;

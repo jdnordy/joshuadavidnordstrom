@@ -4,10 +4,10 @@ import { Layout } from '../../components';
 
 const Works: React.FC = () => (
   <Layout page="creations">
-    <section>
-      <h1>Creations</h1>
+    <main>
+      <h1>CREATIONS</h1>
       <p>Here will be a list of creations.</p>
-    </section>
+    </main>
   </Layout>
 );
 
