@@ -7,9 +7,9 @@
   &:hover {
     svg {
       display: block;
-      fill: rgba(0, 0, 114, 0.301);
+      fill: $blue-faded;
       &.selected {
-        fill: rgba(0, 0, 114, 0.836);
+        fill: $blue;
       }
     }
   }

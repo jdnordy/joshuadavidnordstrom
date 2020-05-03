@@ -1,15 +1,14 @@
 // desktop optimization
 .container {
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr minmax(320px, 620px) 1fr;
-  section {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 0 2rem;
-    h1 {
-      text-align: left;
-    }
-  }
+}
+
+.scroll-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 620px) 1fr;
 }
 
 // tablet optimization
