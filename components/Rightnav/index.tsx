@@ -7,7 +7,7 @@ type Props = {};
 const Rightnav: React.FC<Props> = () => {
   return (
     <header className={styles.rightnav}>
-      <span>This is the left nav.</span>
+      <span>Right Nav</span>
     </header>
   );
 };

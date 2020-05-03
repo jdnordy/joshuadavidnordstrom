@@ -1,9 +1,10 @@
 @import '../../styles/variables';
 
 .leftnav {
+  grid-column-start: 1;
+  grid-column-end: 2;
   display: flex;
   flex-direction: column;
-  width: 25%;
   min-width: 120px;
   height: min-content;
   align-items: flex-end;
