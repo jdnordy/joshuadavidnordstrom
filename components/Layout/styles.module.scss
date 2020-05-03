@@ -2,6 +2,7 @@
 .nav_container {
   position: fixed;
   width: 100vw;
+  height: 0;
   display: grid;
   grid-template-columns: 1fr minmax(320px, 620px) 1fr;
 }
@@ -10,6 +11,7 @@
   position: absolute;
   display: grid;
   width: 100vw;
+  height: 0;
   grid-template-columns: 1fr minmax(320px, 620px) 1fr;
 }
 
