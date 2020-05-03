@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import { App } from "../../components";
+import { Layout } from '../../components';
 
 const Works: React.FC = () => (
-  <App page="creations">
+  <Layout page="creations">
     <section>
       <h1>Creations</h1>
       <p>Here will be a list of creations.</p>
     </section>
-  </App>
+  </Layout>
 );
 
 export default Works;

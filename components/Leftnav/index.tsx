@@ -1,21 +1,20 @@
-import React from "react";
+import React from 'react';
 // components
-import { Navigator } from "../";
-import navigators from "./navigators.config";
+import { Navigator } from '../';
+import navigators from './navigators.config';
 // styles
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 type Props = {
   page: string;
 };
-const Leftnav: React.FC<Props> = ({ page }) => {
-  return (
-    <header className={styles.leftnav}>
-      {navigators.map((el, i) => (
-        <Navigator selected={el.value === page} {...el} />
-      ))}
-    </header>
-  );
-};
+
+const Leftnav: React.FC<Props> = ({ page }) => (
+  <header className={styles.leftnav}>
+    {navigators.map((el, i) => (
+      <Navigator selected={el.value === page} {...el} />
+    ))}
+  </header>
+);
 
 export default Leftnav;

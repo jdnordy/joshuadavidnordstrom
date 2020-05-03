@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { App } from "../../components";
+import { Layout } from '../../components';
 
 const Writings: React.FC = () => (
-  <App page="writings">
+  <Layout page="writings">
     <section>
       <h1>Writings</h1>
       <ul>
@@ -11,7 +11,7 @@ const Writings: React.FC = () => (
         <li>Oldest Writing</li>
       </ul>
     </section>
-  </App>
+  </Layout>
 );
 
 export default Writings;
