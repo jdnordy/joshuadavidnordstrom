@@ -1,13 +1,15 @@
 // desktop optimization
-.container {
-  height: 100vh;
+.nav_container {
+  position: fixed;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr minmax(320px, 620px) 1fr;
 }
 
-.scroll-container {
+.main_container {
+  position: absolute;
   display: grid;
+  width: 100vw;
   grid-template-columns: 1fr minmax(320px, 620px) 1fr;
 }
 
