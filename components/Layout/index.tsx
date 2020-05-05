@@ -11,6 +11,7 @@ type Props = {
 const Layout: React.FC<Props> = ({ page, children }) => {
   return (
     <>
+      <title>{page}</title>
       <div className={styles.main_container}>{children}</div>
       <div className={styles.nav_container}>
         <Leftnav page={page} />

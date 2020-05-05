@@ -12,7 +12,7 @@ type Props = {
 const Leftnav: React.FC<Props> = ({ page }) => (
   <nav className={styles.leftnav}>
     {navigators.map((el, i) => (
-      <Navigator selected={el.value === page} {...el} />
+      <Navigator selected={el.value === page} {...el} key={i} />
     ))}
   </nav>
 );

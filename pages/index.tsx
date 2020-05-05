@@ -4,7 +4,6 @@ import { Layout } from '../components';
 
 const JoshuaDavid: React.FC = () => (
   <Layout page="joshua">
-    <title>joshua</title>
     <main className="joshua">
       <header>
         <img src="/joshua-bw.jpeg" />
