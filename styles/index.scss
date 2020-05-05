@@ -14,6 +14,11 @@ main {
   padding: 2rem;
 }
 
+h1 {
+  font-weight: 800;
+  font-size: 2.2em;
+}
+
 .joshua {
   header {
     position: relative;
@@ -25,8 +30,6 @@ main {
       position: absolute;
       left: 2%;
       h1 {
-        font-weight: 800;
-        font-size: 2.2em;
         text-align: left;
         margin: 12px 0;
         text-decoration: underline dotted;
@@ -52,6 +55,8 @@ main {
 .creations {
   h1 {
     margin-top: 0.4em;
+    margin-bottom: 1.2em;
+    justify-self: center;
   }
 }
 

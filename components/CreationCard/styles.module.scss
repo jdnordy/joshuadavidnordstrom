@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.creation_card {
+  display: flex;
+  padding: 12px;
+  border: 1px solid rgb(236, 236, 236);
+  background-color: white;
+  margin-bottom: 2em;
+  text-decoration: none;
+  color: $text-color;
+  &:hover {
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+    transform: translate3d(0px, -1px, 0px);
+  }
+  img {
+    width: 130px;
+    height: 130px;
+  }
+  div {
+    padding-left: 1em;
+    hgroup {
+      h2 {
+        margin: 0;
+        padding-right: 0.2em;
+        display: inline-block;
+      }
+      h4 {
+        margin: 0;
+        font-weight: 200;
+        display: inline-block;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 200;
+    }
+  }
+}

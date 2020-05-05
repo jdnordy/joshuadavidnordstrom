@@ -1,12 +1,16 @@
 import React from 'react';
 
-import { Layout } from '../../components';
+import { Layout, CreationCard } from '../../components';
+
+import creations from './creations.config';
 
 const Works: React.FC = () => (
   <Layout page="creations">
     <main className="creations">
       <h1>CREATIONS</h1>
-      <p>Here will be a list of creations.</p>
+      {creations.map((c, i) => (
+        <CreationCard {...c} key={i} />
+      ))}
     </main>
   </Layout>
 );
