@@ -6,7 +6,7 @@ const JoshuaDavid: React.FC = () => (
   <Layout page="joshua">
     <main className="joshua">
       <header>
-        <img src="/joshua-bw.jpeg" />
+        <img src="/joshua-bw.jpg" />
         <div>
           <h1>JOSHUA</h1>
           <h1>DAVID</h1>
