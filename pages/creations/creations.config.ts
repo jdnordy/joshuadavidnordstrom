@@ -21,7 +21,7 @@ const creationsList: CreationsList = [
     image: '/snapdesk_logo_c.svg',
     link: 'https://github.com/Just5Coders/snapdesk_1',
     description:
-      'Conveniently ask co-workers for help by posting tickets with a snap rating and topic to the SnapDesk help board. Fellow co-workers can accept the ticket and then recieve snaps for their help.',
+      'Conveniently ask co-workers for help by posting tickets with a snap rating and topic to the SnapDesk help board. Fellow workers can accept tickets and recieve snaps for helping out.',
   },
 ];
 
