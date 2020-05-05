@@ -23,6 +23,14 @@ const creationsList: CreationsList = [
     description:
       'Conveniently ask co-workers for help by posting tickets with a snap rating and topic to the SnapDesk help board. Fellow workers can accept tickets and recieve snaps for helping out.',
   },
+  {
+    title: 'Taco Finder',
+    subtitle: 'Hungry for Tacos?',
+    image: '/taco_finder.gif',
+    link: 'https://github.com/jdnordy/taco-finder',
+    description:
+      "This chrome extension I developed with some dev friends. It's the first creation I built from scratch and although simple, I learned much about collaboration, UX focused design and quering APIs (we used Yelp's for this creation).",
+  },
 ];
 
 export default creationsList;
