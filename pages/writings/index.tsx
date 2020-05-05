@@ -2,10 +2,10 @@ import React from 'react';
 // components
 import { Layout } from '../../components';
 // api functions
-import { getAllWritings } from '../../lib/api';
+import { getAllWritings, Items } from '../../lib/api';
 
 type Props = {
-  writings: Array<{}>;
+  writings: Array<Items>;
 };
 
 const Writings: React.FC<Props> = ({ writings }) => (
@@ -28,8 +28,20 @@ const Writings: React.FC<Props> = ({ writings }) => (
         </svg>
       </div>
       <ul>
-        <li>Newest Writing</li>
-        <li>Oldest Writing</li>
+        {writings
+          .sort((a, b) => {
+            console.log(
+              Date.parse(b.date as string),
+              Date.parse(b.date as string),
+            );
+            return Date.parse(b.date as string) - Date.parse(a.date as string);
+          })
+          .map((w) => (
+            <li>
+              <span>{w.title}</span>
+              <span>{w.date}</span>
+            </li>
+          ))}
       </ul>
     </main>
   </Layout>
