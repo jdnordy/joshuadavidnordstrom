@@ -10,17 +10,17 @@ export function getWritingSlugs() {
 }
 
 interface GetWritingBySlug {
-  (slug: string, fields: string[]): {};
+  (slug: string, fields: string[]): Items;
 }
 
-interface Items {
-  [prop: string]: string;
-}
+export type Items = {
+  [prop: string]: string | number;
+};
 
 export const getWritingBySlug: GetWritingBySlug = (slug, fields = []) => {
   // handle gathering slugs from fs readdirSync
   const realSlug = slug.replace(/\.md$/, '');
-  const writingPath = join(writingsDirectory, `&{slug}.md`);
+  const writingPath = join(writingsDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(writingPath, 'utf8');
   const { data, content } = matter(fileContents);
 
@@ -45,7 +45,7 @@ export const getWritingBySlug: GetWritingBySlug = (slug, fields = []) => {
 };
 
 interface GetAllWritings {
-  (fields: string[]): Array<{}>;
+  (fields: string[]): Array<Items>;
 }
 
 export const getAllWritings: GetAllWritings = (fields = []) => {
