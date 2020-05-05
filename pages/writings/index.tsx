@@ -1,8 +1,14 @@
 import React from 'react';
-
+// components
 import { Layout } from '../../components';
+// api functions
+import { getAllWritings } from '../../lib/api';
 
-const Writings: React.FC = () => (
+type Props = {
+  writings: Array<{}>;
+};
+
+const Writings: React.FC<Props> = ({ writings }) => (
   <Layout page="writings">
     <main className="writings">
       <div className="title_circle">
@@ -28,5 +34,14 @@ const Writings: React.FC = () => (
     </main>
   </Layout>
 );
+
+export async function getStaticProps() {
+  const fields = ['title', 'author', 'date', 'id'];
+  return {
+    props: {
+      writings: getAllWritings(fields),
+    },
+  };
+}
 
 export default Writings;
