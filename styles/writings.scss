@@ -30,3 +30,18 @@
     }
   }
 }
+
+.a_writing {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: $text-color;
+    cursor: pointer;
+    text-decoration: underline dotted;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

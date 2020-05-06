@@ -1,7 +1,8 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 // components
-import { Layout } from '../../components';
+import { Layout, Title } from '../../components';
+import Link from 'next/link';
 // api
 import { getWritingBySlug, getAllWritings } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
@@ -11,7 +12,7 @@ type Props = {
   subtitle: string;
   author: {
     name: string;
-    pic: string;
+    picture: string;
   };
   date: string;
   content: string;
@@ -27,11 +28,16 @@ const aWriting: React.FC<Props> = ({
   content,
 }) => {
   return (
-    <Layout page="">
-      <h1>{title}</h1>
-      <img src={coverImage} />
-      <h2>{subtitle}</h2>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+    <Layout page="writings">
+      <main className="a_writing">
+        <Title {...{ date, title, author }} />
+        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <footer>
+          <Link href="/writings">
+            <a>back to writings</a>
+          </Link>
+        </footer>
+      </main>
     </Layout>
   );
 };
