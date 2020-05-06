@@ -4,4 +4,29 @@
     height: 60%;
     margin-left: 0.4em;
   }
+  ol {
+    padding: 0;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4em;
+    .writing_link {
+      margin-bottom: 0.2em;
+      &:hover {
+        cursor: pointer;
+        a {
+          text-decoration: underline;
+        }
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: underline dotted;
+        }
+        i {
+          padding-right: 4em;
+        }
+      }
+    }
+  }
 }
