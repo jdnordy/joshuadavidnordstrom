@@ -27,18 +27,9 @@ export const getWritingBySlug: GetWritingBySlug = (slug, fields = []) => {
   const items: Items = {};
 
   fields.forEach((f) => {
-    switch (f) {
-      case 'slug':
-        items[f] = realSlug;
-
-      case 'content':
-        items[f] = content;
-
-      default:
-        if (data[f]) {
-          items[f] = data[f];
-        }
-    }
+    if (f === 'slug') items[f] = realSlug;
+    else if (f === 'content') items[f] = content;
+    else if (data[f]) items[f] = data[f];
   });
 
   return items;
