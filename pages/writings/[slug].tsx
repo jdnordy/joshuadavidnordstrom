@@ -1,7 +1,7 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 // components
-import { Layout, Title } from '../../components';
+import { Layout, Title, Content } from '../../components';
 import Link from 'next/link';
 // api
 import { getWritingBySlug, getAllWritings } from '../../lib/api';
@@ -31,7 +31,7 @@ const aWriting: React.FC<Props> = ({
     <Layout page="writings">
       <main className="a_writing">
         <Title {...{ date, title, author }} />
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <Content {...{ content }} />
         <footer>
           <Link href="/writings">
             <a>back to writings</a>

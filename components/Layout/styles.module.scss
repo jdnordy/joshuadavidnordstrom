@@ -4,7 +4,7 @@
   width: 100vw;
   height: 0;
   display: grid;
-  grid-template-columns: 1fr minmax(320px, 620px) 1fr;
+  grid-template-columns: 1fr minmax(320px, 680px) 1fr;
 }
 
 .main_container {
@@ -12,7 +12,7 @@
   display: grid;
   width: 100vw;
   height: 0;
-  grid-template-columns: 1fr minmax(320px, 620px) 1fr;
+  grid-template-columns: 1fr minmax(320px, 680px) 1fr;
 }
 
 // tablet optimization
