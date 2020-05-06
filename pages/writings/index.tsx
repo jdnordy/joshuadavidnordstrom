@@ -1,8 +1,10 @@
 import React from 'react';
 // components
 import { Layout } from '../../components';
+import Link from 'next/link';
 // api functions
 import { getAllWritings, Items } from '../../lib/api';
+import { GetStaticProps } from 'next';
 
 type Props = {
   writings: Array<Items>;
@@ -27,33 +29,34 @@ const Writings: React.FC<Props> = ({ writings }) => (
           <path d="M27 15 L27 30 2 30 2 5 17 5 M30 6 L26 2 9 19 7 25 13 23 Z M22 6 L26 10 Z M9 19 L13 23 Z" />
         </svg>
       </div>
-      <ul>
+      <ol reversed>
         {writings
-          .sort((a, b) => {
-            console.log(
-              Date.parse(b.date as string),
-              Date.parse(b.date as string),
-            );
-            return Date.parse(b.date as string) - Date.parse(a.date as string);
-          })
+          .sort(
+            (a, b) =>
+              Date.parse(b.date as string) - Date.parse(a.date as string),
+          )
           .map((w) => (
-            <li>
-              <span>{w.title}</span>
-              <span>{w.date}</span>
-            </li>
+            <Link href="/writings/[slug]" as={`/writings/${w.slug}`}>
+              <li className="writing_link">
+                <div>
+                  <a>{w.title}</a>
+                  <i>{w.date}</i>
+                </div>
+              </li>
+            </Link>
           ))}
-      </ul>
+      </ol>
     </main>
   </Layout>
 );
 
-export async function getStaticProps() {
-  const fields = ['title', 'author', 'date', 'id'];
+export const getStaticProps: GetStaticProps = async () => {
+  const fields = ['title', 'author', 'date', 'slug'];
   return {
     props: {
       writings: getAllWritings(fields),
     },
   };
-}
+};
 
 export default Writings;

@@ -1,6 +1,6 @@
 import React from 'react';
 // import components
-import { Layout } from '../components';
+import { Layout, Content } from '../components';
 
 const JoshuaDavid: React.FC = () => (
   <Layout page="joshua">
@@ -13,7 +13,7 @@ const JoshuaDavid: React.FC = () => (
           <h1>NORDSTROM</h1>
         </div>
       </header>
-      <section>
+      <Content content="">
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -51,7 +51,7 @@ const JoshuaDavid: React.FC = () => (
           voluptatibus maiores alias consequatur aut perferendis doloribus
           asperiores repellat
         </p>
-      </section>
+      </Content>
     </main>
   </Layout>
 );

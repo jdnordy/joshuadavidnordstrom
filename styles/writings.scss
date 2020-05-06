@@ -4,4 +4,46 @@
     height: 60%;
     margin-left: 0.4em;
   }
+  ol {
+    padding-left: 1em;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.4em;
+    .writing_link {
+      margin-bottom: 0.4em;
+      &:hover {
+        cursor: pointer;
+        a {
+          text-decoration: underline;
+        }
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0.8em;
+        a {
+          text-decoration: underline dotted;
+        }
+        i {
+          padding-right: 4em;
+        }
+      }
+    }
+  }
+}
+
+.a_writing {
+  footer {
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    color: $text-color;
+    cursor: pointer;
+    text-decoration: underline dotted;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
