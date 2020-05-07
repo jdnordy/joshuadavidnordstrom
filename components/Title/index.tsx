@@ -8,10 +8,12 @@ type Props = {
     name: string;
     picture: string;
   };
+  coverImage?: string;
 };
 
-const Title: React.FC<Props> = ({ title, date, author }) => (
+const Title: React.FC<Props> = ({ title, date, author, coverImage }) => (
   <header className={styles.title}>
+    {coverImage && <img src={coverImage} />}
     <h1>{title.toUpperCase()}</h1>
     <div>
       <i>by {author.name.toLowerCase()}</i>

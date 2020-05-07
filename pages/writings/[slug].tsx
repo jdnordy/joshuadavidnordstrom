@@ -30,7 +30,7 @@ const aWriting: React.FC<Props> = ({
   return (
     <Layout page="writings">
       <main className="a_writing">
-        <Title {...{ date, title, author }} />
+        <Title {...{ date, title, author, coverImage }} />
         <Content {...{ content }} />
         <footer>
           <Link href="/writings">
