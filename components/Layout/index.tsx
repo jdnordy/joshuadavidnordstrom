@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Leftnav, Rightnav } from '../';
 // STYLES
 import styles from './styles.module.scss';
-import Mobilenav from '../Mobilenav';
+import Navbar from '../Navbar';
 
 type Props = {
   page: string;
@@ -14,13 +14,7 @@ const Layout: React.FC<Props> = ({ page, children }) => {
     <>
       <title>{page}</title>
       <div className={styles.main_container}>{children}</div>
-      <div className={styles.nav_container}>
-        <Leftnav page={page} />
-        <Rightnav />
-      </div>
-      <div className={styles.mobile_nav_container}>
-        <Mobilenav page={page} />
-      </div>
+      <Navbar page={page} />
     </>
   );
 };

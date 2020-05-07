@@ -5,7 +5,7 @@ import Navigator from './Navigator';
 import CreationCard from './CreationCard';
 import Title from './Title';
 import Content from './Content';
-import Mobilenav from './Mobilenav';
+import Navbar from './Navbar';
 
 export {
   Leftnav,
@@ -15,5 +15,5 @@ export {
   CreationCard,
   Title,
   Content,
-  Mobilenav,
+  Navbar,
 };

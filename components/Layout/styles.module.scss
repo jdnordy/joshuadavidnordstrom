@@ -1,23 +1,13 @@
+@import '../../styles/variables';
+
 // desktop optimization
 @media (min-width: 769px) {
-  .nav_container {
-    position: fixed;
-    width: 100vw;
-    height: 0;
-    display: grid;
-    grid-template-columns: 1fr minmax(320px, 680px) 1fr;
-  }
-
   .main_container {
     position: absolute;
     display: grid;
     width: 100vw;
     height: 0;
     grid-template-columns: 1fr minmax(320px, 680px) 1fr;
-  }
-
-  .mobile_nav_container {
-    display: none;
   }
 }
 
@@ -25,9 +15,7 @@
 @media (min-width: 320px) and (max-width: 768px) {
   .main_container {
     position: absolute;
+    top: $navbar-size;
     width: 100vw;
-  }
-  .nav_container {
-    display: none;
   }
 }
