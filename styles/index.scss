@@ -3,51 +3,71 @@
 @import 'creations';
 @import 'writings';
 
-body {
-  margin: 0;
-  font-family: $font-fam;
-  background-color: $background-color;
-  color: $text-color;
-  font-size: 16px;
-}
+@media (min-width: 769px) {
+  body {
+    margin: 0;
+    font-family: $font-fam;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 16px;
+  }
 
-main {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding: 2rem;
-}
+  main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 2rem;
+  }
 
-h1 {
-  font-weight: 800;
-  font-size: 2.2em;
-  padding-left: 1.5em;
-  margin-top: 0.4em;
-  margin-bottom: 1.2em;
-}
+  h1 {
+    font-weight: 800;
+    font-size: 2.2em;
+    padding-left: 1.5em;
+    margin-top: 0.4em;
+    margin-bottom: 1.2em;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
-}
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New,
+      monospace;
+  }
 
-.title_circle {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: $blue-faded;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 2em auto;
-  svg {
-    width: 70%;
-    height: 70%;
+  .title_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $blue-faded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2em auto;
+    svg {
+      width: 70%;
+      height: 70%;
+    }
   }
 }
 
-// tablet optimization
-@media (min-width: 768px) and (max-width: 961px) {
-}
-
 // mobile optimization
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    margin: 0;
+    font-family: $font-fam;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 20px;
+  }
+  .title_circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $blue-faded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2em auto;
+    svg {
+      width: 70%;
+      height: 70%;
+    }
+  }
 }
