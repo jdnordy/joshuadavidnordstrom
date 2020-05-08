@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 // COMPONENETS
 import { Leftnav, Rightnav } from '../';
 // STYLES
 import styles from './styles.module.scss';
+import Navbar from '../Navbar';
 
 type Props = {
   page: string;
@@ -13,10 +14,7 @@ const Layout: React.FC<Props> = ({ page, children }) => {
     <>
       <title>{page}</title>
       <div className={styles.main_container}>{children}</div>
-      <div className={styles.nav_container}>
-        <Leftnav page={page} />
-        <Rightnav />
-      </div>
+      <Navbar page={page} />
     </>
   );
 };
