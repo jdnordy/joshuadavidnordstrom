@@ -58,14 +58,14 @@
     font-size: 20px;
   }
   .title_circle {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: $blue-faded;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 2em auto;
+    margin: 0.5em auto 1em auto;
     svg {
       width: 70%;
       height: 70%;
