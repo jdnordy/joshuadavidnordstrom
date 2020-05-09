@@ -17,5 +17,7 @@
     position: absolute;
     top: $navbar-size;
     width: 100vw;
+    box-sizing: border-box;
+    padding: 0 0.5em;
   }
 }
