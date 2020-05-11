@@ -15,42 +15,63 @@ const JoshuaDavid: React.FC = () => (
       </header>
       <Content content="">
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem.
+          In 2016, I was introduced to programming while in seminary and I was
+          hooked. Four years later, I am a software engineer currently focused
+          on full-stack Javascript web development. I love what I do because I
+          am a problem solver at heart and a perpetual learner.
+        </p>
+        <blockquote>
+          <p>
+            I love what I do because I am a problem solver at heart and a
+            perpetual learner.
+          </p>
+        </blockquote>
+        <p>
+          When faced with a problem, I am excited and my brain starts running,
+          speeding down every path trying to find a solution. I find it hard to
+          rest with an unresolved challenge laid before me. My brain will even
+          keep working while I sleep. It has happened on numerous occasions
+          where I will fall asleep with a lingering problem and wake up with a
+          solution. Or I'll simply dig in, research, and implement until I have
+          arrived at the optimal solution. And then, I get that buzz, that
+          feeling of accomplishment, that feeling of bringing something new to
+          life and I keep coming back for more.
         </p>
         <p>
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-          autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur?
-        </p>
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est
-          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-          omnis voluptas assumenda est, omnis dolor repellendus.
+          Expanding my knowledge has always been core to what defines me. From
+          plumbing the depth of the Christian faith to studying and discussing
+          the classics during my{' '}
+          <a href="https://www.biola.edu/torrey">honors program</a> in
+          university, I've been driven by a hunger to learn. Software
+          engineering is the culmination of this drive. I like to say that I've
+          always been a one at heart--researching, implmenting, assessing,
+          repeat. Now, it's just activated.
         </p>
 
-        <h2>Temporibus</h2>
         <p>
-          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-          voluptatibus maiores alias consequatur aut perferendis doloribus
-          asperiores repellat
+          This website functions as my personal porfolio and an archive of
+          musings as I continue to the journey of a software engineer--always
+          learning and problem solving. The landscape of web development is ever
+          evolving and so the areas to explore are endless.
         </p>
+
+        <h2>What I'm Learning</h2>
+        <p>Here's a few things that I am currently learning...</p>
+        <ul>
+          <li>
+            <a href="https://nextjs.org/docs/getting-started">Next.js</a> and
+            the improved UX that accompanies pre-built HTML
+          </li>
+          <li>
+            <a href="https://jamstack.org/">JAMStack</a> and the benefits
+            serverless web development.
+          </li>
+          <li>
+            <a href="https://macwright.org/2020/05/10/spa-fatigue.html">
+              To use or not use React?
+            </a>
+          </li>
+        </ul>
       </Content>
     </main>
   </Layout>
