@@ -45,7 +45,8 @@
     flex-direction: column;
     align-items: center;
     &:hover {
-      border-color: inherit;
+      border-color: rgb(236, 236, 236);
+      box-shadow: none;
     }
     img {
       width: 200px;
