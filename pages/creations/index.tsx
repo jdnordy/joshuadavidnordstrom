@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Layout, CreationCard } from '../../components';
 
-import creations from './creations.config';
+import creations from '../../lib/creations.config';
 
 const Works: React.FC = () => (
   <Layout page="creations">
