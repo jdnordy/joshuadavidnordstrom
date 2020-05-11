@@ -37,12 +37,14 @@ const Writings: React.FC<Props> = ({ writings }) => (
           )
           .map((w) => (
             <Link href="/writings/[slug]" as={`/writings/${w.slug}`}>
-              <li className="writing_link">
-                <div>
-                  <a>{w.title}</a>
-                  <i>{w.date}</i>
-                </div>
-              </li>
+              <a className="writing_link">
+                <li>
+                  <div>
+                    <span>{w.title}</span>
+                    <i>{w.date}</i>
+                  </div>
+                </li>
+              </a>
             </Link>
           ))}
       </ol>
