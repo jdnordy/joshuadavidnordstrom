@@ -10,7 +10,11 @@ class MyDocument extends Document {
             name="description"
             content="A public archives of creations and writings by a problem solver and perpetual learner."
           />
-          <meta property="og:image" content="/joshua-bw.jpg" />
+          <meta
+            name="keywords"
+            content="joshua, david, nordstrom, software, engineer, web, developer, dev, programmer, creations, writings, archives"
+          />
+          <link rel="icon" type="image/png" href="/logo_v6.png" />
         </Head>
         <body>
           <Main />
