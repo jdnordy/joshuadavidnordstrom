@@ -10,7 +10,7 @@ const creationsList: CreationsList = [
   {
     title: 'Nautilus',
     subtitle: 'A Docker Compose Charting Tool',
-    image: '/nautilus_logo.jpg',
+    image: '/nautilus_logo.png',
     link: 'https://nautilusdev.com/',
     description:
       'An interactive D3 visualizing tool that dynamically renders essential Docker Compose properties onto an Electron GUI, built to reduce cognitive load and simplify the development environment for engineers.',

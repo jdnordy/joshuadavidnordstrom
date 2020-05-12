@@ -32,9 +32,7 @@
       height: min-content;
       div {
         position: static;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        flex-direction: column;
         h1 {
           margin-bottom: 0.2em;
           font-size: 36px;
@@ -42,7 +40,8 @@
       }
       img {
         position: static;
-        width: 50%;
+        width: 100vw;
+        max-width: 375px;
         align-self: center;
       }
     }

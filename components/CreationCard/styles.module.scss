@@ -16,9 +16,9 @@
   }
   img {
     width: 130px;
-    height: auto;
-    max-height: 130px;
+    height: min-content;
     flex-shrink: 0;
+    align-self: center;
   }
   div {
     padding-left: 1em;
