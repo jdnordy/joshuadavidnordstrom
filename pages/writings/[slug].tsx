@@ -28,7 +28,7 @@ const aWriting: React.FC<Props> = ({
   content,
 }) => {
   return (
-    <Layout page="writings">
+    <Layout page="writings" subPage={title}>
       <main className="a_writing">
         <Title {...{ date, title, author, coverImage }} />
         <Content {...{ content }} />
