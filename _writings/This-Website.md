@@ -55,16 +55,12 @@ Vercel, created by the makers of Next.js, functions as a light weight CI/CD tool
 
 ## The Bad
 
-### 1. Difficult to persistent state across the website
+### 1. Not as Dry as 
 
-In an SPA, this is no problem. React handles state management well especially when including something like Redux to enforce the flux paradigm. But, a Next.js website is not an SPA. When [linking](https://nextjs.org/docs/api-reference/next/link) to a different [route](https://nextjs.org/docs/api-reference/next/router), 
-
-### 2. Forced to write _"bad"_ React for consistent layout across pages
-
-### 3. 
+### 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTEyMTM2NiwtMTE3NzE0OTk4NSwyMz
-Q3OTk1NzcsLTkwNjUzNTI5MywtMjE1NjI0OTE5LC01MzczNDMy
-NzBdfQ==
+eyJoaXN0b3J5IjpbNzY2MzU1Njg2LDE0MjExMjEzNjYsLTExNz
+cxNDk5ODUsMjM0Nzk5NTc3LC05MDY1MzUyOTMsLTIxNTYyNDkx
+OSwtNTM3MzQzMjcwXX0=
 -->
