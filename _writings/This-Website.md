@@ -55,12 +55,12 @@ Vercel, created by the makers of Next.js, functions as a light weight CI/CD tool
 
 ## The Bad
 
-### 1. Not as Dry as 
+### 1. 
 
 ### 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2MzU1Njg2LDE0MjExMjEzNjYsLTExNz
-cxNDk5ODUsMjM0Nzk5NTc3LC05MDY1MzUyOTMsLTIxNTYyNDkx
-OSwtNTM3MzQzMjcwXX0=
+eyJoaXN0b3J5IjpbLTYwNjc5OTEyMiwxNDIxMTIxMzY2LC0xMT
+c3MTQ5OTg1LDIzNDc5OTU3NywtOTA2NTM1MjkzLC0yMTU2MjQ5
+MTksLTUzNzM0MzI3MF19
 -->
