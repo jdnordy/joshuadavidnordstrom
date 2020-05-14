@@ -17,7 +17,7 @@ const CreationCard: React.FC<Props> = ({
   description,
   link,
 }) => (
-  <a className={styles.creation_card} href={link}>
+  <a className={styles.creation_card} href={link} target="_blank">
     <img src={image} />
     <div>
       <hgroup>

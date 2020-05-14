@@ -4,6 +4,9 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  color: $text-color;
+  text-decoration: none;
+  font-variant: small-caps;
   &:hover {
     svg {
       display: block;
@@ -22,11 +25,6 @@
     &.selected {
       display: block;
     }
-  }
-  a {
-    color: $text-color;
-    text-decoration: none;
-    font-variant: small-caps;
   }
 }
 

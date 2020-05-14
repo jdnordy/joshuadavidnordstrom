@@ -11,7 +11,7 @@ type Props = {
 
 const Navigator: React.FC<Props> = ({ link, selected, label }) => (
   <Link href={link}>
-    <div
+    <a
       className={styles.navigator}
       onClick={() => (document.querySelector('body')!.style.overflow = '')}
     >
@@ -22,8 +22,8 @@ const Navigator: React.FC<Props> = ({ link, selected, label }) => (
       >
         <circle cx="50" cy="50" r="50" />
       </svg>
-      <a>{label}</a>
-    </div>
+      <span>{label}</span>
+    </a>
   </Link>
 );
 
