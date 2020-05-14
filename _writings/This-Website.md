@@ -57,13 +57,13 @@ Vercel, created by the makers of Next.js, functions as a light weight CI/CD tool
 
 ### 1. No persistent state across the website
 
-While this might be obvious given that Next.js is not an SPA, it caught me by su
+While this might be obvious given that Next.js is not an SPA, I had to reconcile with it in development. I wanted to implement
 
 ### 2. Forced to write _"bad"_ React for consistent layout across pages
 
 ### 3. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzOTUwMTMwOSwtOTA2NTM1MjkzLC0yMT
+eyJoaXN0b3J5IjpbLTEwNzc0OTg3MywtOTA2NTM1MjkzLC0yMT
 U2MjQ5MTksLTUzNzM0MzI3MF19
 -->
