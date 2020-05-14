@@ -10,10 +10,7 @@ import markdownToHtml from '../../lib/markdownToHtml';
 type Props = {
   title: string;
   subtitle: string;
-  author: {
-    name: string;
-    picture: string;
-  };
+  author: string;
   date: string;
   content: string;
   coverImage: string;

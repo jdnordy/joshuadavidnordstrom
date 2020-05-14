@@ -3,11 +3,8 @@ title: 'Dynamic Routing and Static Generation'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus.'
 coverImage: '/snapdesk_logo_c.svg'
 date: '2020-04-01'
-author:
-  name: Joshua David Nordstrom
-  picture: '/assets/blog/authors/jj.jpeg'
-ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+author: Joshua David Nordstrom
+ogImage: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
 ## H2 Header
