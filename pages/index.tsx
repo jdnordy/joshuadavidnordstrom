@@ -59,15 +59,22 @@ const JoshuaDavid: React.FC = () => (
         <p>Here's a few things that I am currently learning...</p>
         <ul>
           <li>
-            <a href="https://nextjs.org/docs/getting-started">Next.js</a> and
-            the improved UX that accompanies pre-built HTML
+            <a href="https://nextjs.org/docs/getting-started" target="_blank">
+              Next.js
+            </a>{' '}
+            and the improved UX that accompanies pre-built HTML
           </li>
           <li>
-            <a href="https://jamstack.org/">JAMStack</a> and the benefits
-            serverless web development.
+            <a href="https://jamstack.org/" target="_blank">
+              JAMStack
+            </a>{' '}
+            and the benefits serverless web development.
           </li>
           <li>
-            <a href="https://macwright.org/2020/05/10/spa-fatigue.html">
+            <a
+              href="https://macwright.org/2020/05/10/spa-fatigue.html"
+              target="_blank"
+            >
               To use or not use React?
             </a>
           </li>

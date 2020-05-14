@@ -14,19 +14,21 @@
       text-decoration: none;
       li {
         margin-bottom: 0.4em;
-
         &:hover {
           cursor: pointer;
           span {
-            text-decoration: underline;
+            color: lighten($blue, 25);
           }
+        }
+        &:active span {
+          color: lighten($blue, 25);
         }
         div {
           display: flex;
           justify-content: space-between;
           padding-left: 0.8em;
           span {
-            text-decoration: underline dotted;
+            text-decoration: underline;
           }
           i {
             padding-right: 4em;
@@ -46,9 +48,9 @@
   a {
     color: $text-color;
     cursor: pointer;
-    text-decoration: underline dotted;
+    text-decoration: underline;
     &:hover {
-      text-decoration: underline;
+      color: lighten($blue, 25);
     }
   }
 }
@@ -59,16 +61,6 @@
       .writing_link {
         li {
           margin-bottom: 1em;
-          &:hover {
-            span {
-              text-decoration: underline dotted;
-            }
-          }
-          &:active {
-            span {
-              text-decoration: underline;
-            }
-          }
           div {
             flex-direction: column;
             i {

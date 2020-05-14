@@ -62,9 +62,9 @@
   a {
     color: $text-color;
     cursor: pointer;
-    text-decoration: underline dotted;
+    text-decoration: underline;
     &:hover {
-      text-decoration: underline;
+      color: lighten($blue, 15);
     }
   }
 }
