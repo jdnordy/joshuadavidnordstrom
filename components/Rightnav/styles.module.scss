@@ -1,14 +1,93 @@
+@import '../../styles/variables';
+
+$svg-width: 16px;
+$lighter: lighten($text-color, 50);
+
 .rightnav {
-  grid-column-start: 3;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: center;
   min-width: 120px;
-  margin-top: 2rem;
-  padding-left: 8px;
+  margin-top: 0;
+  padding: 0 0 8px 8px;
   box-sizing: border-box;
+  height: 100vh;
+  color: $lighter;
+  div {
+    display: flex;
+    align-items: center;
+    a {
+      fill: $lighter;
+      color: $lighter;
+      &:hover {
+        color: $text-color;
+        fill: $text-color;
+      }
+      svg {
+        width: $svg-width;
+        height: auto;
+        margin: 0 6px;
+      }
+    }
+  }
+  p {
+    margin: 0;
+    span {
+      font-size: 0.7em;
+      font-weight: 300;
+      margin-right: 4px;
+    }
+  }
+}
+
+#linkedin,
+#github {
+  width: $svg-width - 2;
+}
+
+#mail {
+  padding-top: 2px;
 }
 
 // mobile optimization
 @media (min-width: 320px) and (max-width: 768px) {
+  .rightnav {
+    justify-content: space-between;
+    padding: 16px 8px $navbar-size + 8px 8px;
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+      a {
+        color: $text-color;
+        margin-bottom: 0.8em;
+        &:active {
+          color: $lighter;
+        }
+        svg {
+          width: $svg-width + 20px;
+        }
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #linkedin {
+    fill: $text-color;
+    width: $svg-width + 17px;
+    &:active {
+      fill: $lighter;
+    }
+  }
+  #github {
+    width: $svg-width + 18px;
+  }
+
+  #mail {
+    padding-top: 2px;
+  }
 }

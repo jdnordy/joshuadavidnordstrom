@@ -25,11 +25,10 @@
     align-items: center;
     left: 0;
     top: $navbar-size;
-    padding-right: 8px;
+    padding-right: 0;
     background-color: $background-color;
-    width: 40%;
+    width: $sidebar-size;
     height: 1200px;
-    transition: ease-in 0.5s;
     border-top: 0.5px solid rgb(151, 151, 151);
     padding-top: 1em;
   }

@@ -35,9 +35,11 @@
       flex-direction: column;
       height: min-content;
       div {
-        left: -1em;
+        left: 50%;
+        transform: translateX(-50%);
         top: 3em;
         width: 100vw;
+        max-width: 375px;
         h1 {
           margin-bottom: 0.2em;
           font-size: 36px;
