@@ -4,7 +4,6 @@ $svg-width: 16px;
 $lighter: lighten($text-color, 50);
 
 .rightnav {
-  grid-column-start: 3;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -27,14 +26,18 @@ $lighter: lighten($text-color, 50);
       }
       svg {
         width: $svg-width;
-        height: min-content;
+        height: auto;
         margin: 0 6px;
       }
     }
   }
-  span {
-    font-size: 0.7em;
-    font-weight: 300;
+  p {
+    margin: 0;
+    span {
+      font-size: 0.7em;
+      font-weight: 300;
+      margin-right: 4px;
+    }
   }
 }
 
@@ -49,4 +52,42 @@ $lighter: lighten($text-color, 50);
 
 // mobile optimization
 @media (min-width: 320px) and (max-width: 768px) {
+  .rightnav {
+    justify-content: space-between;
+    padding: 16px 8px $navbar-size + 8px 8px;
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+      a {
+        color: $text-color;
+        margin-bottom: 0.8em;
+        &:active {
+          color: $lighter;
+        }
+        svg {
+          width: $svg-width + 20px;
+        }
+      }
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #linkedin {
+    fill: $text-color;
+    width: $svg-width + 17px;
+    &:active {
+      fill: $lighter;
+    }
+  }
+  #github {
+    width: $svg-width + 18px;
+  }
+
+  #mail {
+    padding-top: 2px;
+  }
 }

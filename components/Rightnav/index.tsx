@@ -52,7 +52,10 @@ const Rightnav: React.FC<Props> = () => {
           </svg>
         </a>
       </div>
-      <span>Joshua Nordstrom ©2020</span>
+      <p>
+        <span>Joshua Nordstrom</span>
+        <span>©2020</span>
+      </p>
     </nav>
   );
 };
