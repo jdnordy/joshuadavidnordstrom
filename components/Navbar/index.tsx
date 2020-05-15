@@ -74,7 +74,7 @@ const Navbar: React.FC<Props> = ({ page }) => {
           </svg>
         </button>
       </div>
-      {/* <Rightnav /> */}
+      <Rightnav />
     </nav>
   );
 };
