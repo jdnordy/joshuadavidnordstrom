@@ -6,7 +6,7 @@ const JoshuaDavid: React.FC = () => (
   <Layout page="joshua">
     <main className="joshua">
       <header>
-        <img src="/joshua-bw.jpg" />
+        <img src="/joshua.jpeg" />
         <div>
           <h1>JOSHUA</h1>
           <h1>DAVID</h1>
@@ -15,44 +15,26 @@ const JoshuaDavid: React.FC = () => (
       </header>
       <Content content="">
         <p>
-          In 2016, I was introduced to programming while in seminary and I was
-          hooked. Four years later, I am a software engineer currently focused
-          on full-stack Javascript web development. I love what I do because I
-          am a problem solver at heart and a perpetual learner.
-        </p>
-        <blockquote>
-          <p>
-            I love what I do because I am a problem solver at heart and a
-            perpetual learner.
-          </p>
-        </blockquote>
-        <p>
-          When faced with a problem, I am excited and my brain starts running,
-          speeding down every path trying to find a solution. I find it hard to
-          rest with an unresolved challenge laid before me. My brain will even
-          keep working while I sleep. It has happened on numerous occasions
-          where I will fall asleep with a lingering problem and wake up with a
-          solution. Or I'll simply dig in, research, and implement until I have
-          arrived at the optimal solution. And then, I get that buzz, that
-          feeling of accomplishment, that feeling of bringing something new to
-          life and I keep coming back for more.
+          I was introduced to programming while in grad school and I was hooked.
+          Four years later, I am a software engineer currently focused on
+          full-stack Javascript web development. I recently developed and
+          deployed <a href="https://nautilusdev.com">Nautilus</a>, an Electron
+          desktop application built with React and D3 that visualizes a Docker
+          Compose instance.
         </p>
         <p>
-          Expanding my knowledge has always been core to what defines me. From
-          plumbing the depth of the Christian faith to studying and discussing
-          the classics during my{' '}
-          <a href="https://www.biola.edu/torrey">honors program</a> in
-          university, I've been driven by a hunger to learn. Software
-          engineering is the culmination of this drive. I like to say that I've
-          always been a one at heart--researching, implmenting, assessing,
-          repeat. Now, it's just activated.
+          Currently, I'm developing for{' '}
+          <a href="https://www.winebud.com">winebud</a>, a virtual wine cellar
+          and social media web app. (If you're intrigued, shoot me an{' '}
+          <a href="mailto:joshua@jdnordstrom.com">email</a> and I'll get you an
+          account). I'm translating the legacy PHP code into React and
+          containerizing the application with Docker.
         </p>
-
         <p>
-          This website functions as my personal porfolio and an archive of
-          musings as I continue to the journey of a software engineer--always
-          learning and problem solving. The landscape of web development is ever
-          evolving and so the areas to explore are endless.
+          <a href="/writings/this-website">This website</a> functions as my
+          personal portfolio and an archive of musings as I continue growing as
+          an engineer--always learning, problem solving, and evolving in accord
+          with the ever changing landscape of web technology.
         </p>
 
         <h2>What I'm Learning</h2>
