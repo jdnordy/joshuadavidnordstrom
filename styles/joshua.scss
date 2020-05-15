@@ -1,25 +1,29 @@
 .joshua {
   header {
     position: relative;
-    height: 300px;
+    height: 430px;
     div {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       position: absolute;
-      left: 5%;
+      top: 2em;
+      left: 40%;
       h1 {
+        font-size: 36px;
         text-align: left;
         margin: 12px 0;
-        text-decoration: underline dotted;
         padding: 0;
+        padding: 0 8px;
+        background-color: lighten($blue-faded, 12);
+        border-radius: 2px;
       }
     }
     img {
       position: absolute;
-      left: 40%;
-      width: 280px;
+      width: 320px;
       border-radius: 2px;
+      left: 138px;
     }
   }
 }
@@ -31,8 +35,9 @@
       flex-direction: column;
       height: min-content;
       div {
-        position: static;
-        flex-direction: column;
+        left: -1em;
+        top: 3em;
+        width: 100vw;
         h1 {
           margin-bottom: 0.2em;
           font-size: 36px;

@@ -27,8 +27,6 @@ So, what's the big deal about Next.js?
 
 Next.js offers the ability to write React while leveraging the benefits of SSR. While it is true that it shines when building an SPA with dynamic data, React is also great because it's just JavaScipt--functional and declarative. It allows for clean code; enforces one way data flow; and enables the creation of reusable components. I could go on, but if you've worked with React you get it. It'd be a bummer to say bye-bye to React when it came time to develop a static website.
 
-> React is great because it's just JavaScript--functional and declarative.
-
 With Next.js, you get to build out your static website by writing React. There is some on-boarding that comes with how Next.js handles pages and learning new APIs for fetching dynamic data. But, at the core, it's just React. And so, by extensions, it's just JavaScript.
 
 All that being said, here are my thoughts about the good and the bad.
@@ -57,13 +55,13 @@ Vercel, created by the makers of Next.js, functions as a light weight CI/CD tool
 
 ### 1. It's still a React app
 
-What I mean by this is that all of the React files still accompany a Next.js website and these files are comparatively large to the rest of the application. By itself, React weighs in around [106kb](https://reactjs.org/blog/2017/09/26/react-v16.0.html#reduced-file-size). This is large by comparison--the HTML for the home page here is a measly 6.26kb and uses minimal CSS and JavaScript (not accounting for the React ecosystem). What this means is that this website would be significantly faster without React and Next.js. 
+What I mean by this is that all of the React files still accompany a Next.js website and these files are comparatively large to the rest of the application. By itself, React weighs in around [106kb](https://reactjs.org/blog/2017/09/26/react-v16.0.html#reduced-file-size). This is large by comparison--the HTML for the home page here is a measly 6.26kb and uses minimal CSS and JavaScript (not accounting for the React ecosystem). What this means is that this website would be significantly faster without React and Next.js.
 
-Most static websites don't need React running in the background.  While this does come with certain benefits, it still feels a bit too heavy for the simplicity of many static webpages (this one being a prime example). 
+Most static websites don't need React running in the background. While this does come with certain benefits, it still feels a bit too heavy for the simplicity of many static webpages (this one being a prime example).
 
-### 2. Time to interactivity still "slow" 
+### 2. Time to interactivity still "slow"
 
-I want to caveat this by saying that "slow" is a relative term; we're talking about milliseconds here. But in web development, the faster the website the better UX, which means higher returning user rater, which means greater profit. 
+I want to caveat this by saying that "slow" is a relative term; we're talking about milliseconds here. But in web development, the faster the website the better UX, which means higher returning user rater, which means greater profit.
 
 The time to first paint is lightning fast because of the pre-rendering powers of Next.js. Yet as mentioned in the point above, the JavaScript file is large. This means the time to webpage responsiveness is the same speed as a React site. While the time to first paint is a huge benefit, Next.js only goes halfway in boosting the speed of your webpage.
 
@@ -75,12 +73,11 @@ Minimal and old school internet modernized are the design goals for this website
 
 Graphic design is a whole field of expertise that I've only dabbled in as an amateur. I usually design by starting out with a vision and then changing it based on what looks good once I see it. But, envisioning and then implementing in CSS at the same time is laborious. Ideally, I'd learn adobe one day.
 
-CSS is easy to learn, but difficult to master. In the past, I've turned to styling libraries such as Bootstrap and Material UI to make CSS less scary.  But, I felt these libraries stunting my growth as a frontend developer. This website is all home-brew CSS. Here's what I learned: there's a lot that can be achieved with CSS sans JavaScript and the transition property is hard.
+CSS is easy to learn, but difficult to master. In the past, I've turned to styling libraries such as Bootstrap and Material UI to make CSS less scary. But, I felt these libraries stunting my growth as a frontend developer. This website is all home-brew CSS. Here's what I learned: there's a lot that can be achieved with CSS sans JavaScript and the transition property is hard.
 
 ## Final Thoughts
 
-This website was a journey in exploring the new (or rather the reskinned) technology of server-side rendering and a study on static website optimization. I learned a lot as a software engineer, had fun, and am proud of the end product. Programming excites me. I am constantly iterating upon projects and expanding my sphere of knowledge. [jdnordstrom.com](https://jdnordstrom.com) will continue to evolve as I evolve as a software engineer. 
-
+This website was a journey in exploring the new (or rather the reskinned) technology of server-side rendering and a study on static website optimization. I learned a lot as a software engineer, had fun, and am proud of the end product. Programming excites me. I am constantly iterating upon projects and expanding my sphere of knowledge. [jdnordstrom.com](https://jdnordstrom.com) will continue to evolve as I evolve as a software engineer.
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbOTA3NjcwMTE5XX0=

@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 // COMPONENETS
-import { Leftnav, Rightnav } from '../';
+import { Navbar } from '../';
 // STYLES
 import styles from './styles.module.scss';
-import Navbar from '../Navbar';
 
 type Props = {
   page: string;
@@ -12,7 +11,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ page, children, subPage }) => {
   const title = `${page.split('')[0].toUpperCase() + page.slice(1)}${
-    subPage ? '/' + subPage : ''
+    subPage ? ' - ' + subPage : ''
   }`;
   return (
     <>
