@@ -34,7 +34,9 @@ const JoshuaDavid: React.FC = () => (
           <a href="/writings/this-website">This website</a> functions as my
           personal portfolio and an archive of musings as I continue growing as
           an engineer--always learning, problem solving, and evolving in accord
-          with the ever changing landscape of web technology.
+          with the ever changing landscape of web technology. See the code
+          behind the site{' '}
+          <a href="https://github.com/jdnordy/joshuadavidnordstrom">here</a>.
         </p>
 
         <h2>What I'm Learning</h2>
