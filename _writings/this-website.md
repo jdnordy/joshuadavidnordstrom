@@ -79,6 +79,4 @@ CSS is easy to learn, but difficult to master. In the past, I've turned to styli
 
 This website was a journey in exploring the new (or rather the reskinned) technology of server-side rendering and a study on static website optimization. I learned a lot as a software engineer, had fun, and am proud of the end product. Programming excites me. I am constantly iterating upon projects and expanding my sphere of knowledge. [jdnordstrom.com](https://jdnordstrom.com) will continue to evolve as I evolve as a software engineer.
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NjcwMTE5XX0=
--->
+P.S. If you want to see the magic that makes it happen, here's [this](https://github.com/jdnordy/joshuadavidnordstrom) (the website's github repo).
