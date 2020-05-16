@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 // COMPONENETS
 import { Navbar } from '../';
 // STYLES
@@ -15,7 +16,9 @@ const Layout: React.FC<Props> = ({ page, children, subPage }) => {
   }`;
   return (
     <>
-      <title>{title}</title>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <div className={styles.main_container}>{children}</div>
       <Navbar page={page} />
     </>
