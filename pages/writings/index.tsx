@@ -35,8 +35,8 @@ const Writings: React.FC<Props> = ({ writings }) => (
             (a, b) =>
               Date.parse(b.date as string) - Date.parse(a.date as string),
           )
-          .map((w) => (
-            <Link href="/writings/[slug]" as={`/writings/${w.slug}`}>
+          .map((w, i) => (
+            <Link href="/writings/[slug]" as={`/writings/${w.slug}`} key={1}>
               <a className="writing_link">
                 <li>
                   <div>

@@ -58,9 +58,7 @@
   }
   .rightnav_container {
     position: absolute;
-    margin-left: 100vw;
-    left: -$sidebar-size;
-    padding-right: 8px;
+    right: 0;
     background-color: $background-color;
     width: $sidebar-size;
     height: 1200px;
