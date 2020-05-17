@@ -25,8 +25,8 @@ const Layout: React.FC<Props> = ({ page, children, subPage }) => {
     }
     gtag('js', new Date());
     gtag('config', 'UA-166852828-1', {
-      page_title: ${subPage ? subPage : page},
-      page_path: ${router.asPath}
+      page_title: "${subPage ? subPage : page}",
+      page_path: "${router.asPath}"
     });
   `;
 
