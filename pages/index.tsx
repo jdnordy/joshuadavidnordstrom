@@ -43,24 +43,26 @@ const JoshuaDavid: React.FC = () => (
         <p>Here's a few things that I am currently learning...</p>
         <ul>
           <li>
-            <a href="https://nextjs.org/docs/getting-started" target="_blank">
-              Next.js
+            The{' '}
+            <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_blank">
+              LAMP
             </a>{' '}
-            and the improved UX that accompanies pre-built HTML
+            tech stack, specifically with PHP.
           </li>
           <li>
-            <a href="https://jamstack.org/" target="_blank">
-              JAMStack
+            <a href="https://deno.land/" target="_blank">
+              Deno
             </a>{' '}
-            and the benefits serverless web development.
+            and whether or not it will replace node. My intial thoughts--support for typescript out fo the box is pretty sweet.
           </li>
           <li>
             <a
-              href="https://macwright.org/2020/05/10/spa-fatigue.html"
+              href="https://www.xml.com/pub/a/2002/12/18/dive-into-xml.html"
               target="_blank"
             >
-              To use or not use React?
-            </a>
+              RSS feeds
+            </a>{' '}
+            and how to incorporate one into this site.
           </li>
         </ul>
       </Content>
