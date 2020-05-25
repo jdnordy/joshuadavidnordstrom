@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 // styles
 import styles from './styles.module.scss';
 
@@ -7,7 +8,8 @@ type Props = {
   subtitle: string;
   image: string;
   description: string;
-  link: string;
+  link: string | null;
+  internalLink: string | null;
 };
 
 const CreationCard: React.FC<Props> = ({
@@ -16,19 +18,31 @@ const CreationCard: React.FC<Props> = ({
   image,
   description,
   link,
-}) => (
-  <a className={styles.creation_card} href={link} target="_blank">
-    <img src={image} />
-    <div>
-      <hgroup>
-        <h2>{title}</h2>
-        <h4>
-          <i>{subtitle}</i>
-        </h4>
-      </hgroup>
-      <p>{description}</p>
-    </div>
-  </a>
-);
+  internalLink,
+}) => {
+  const children = (
+    <>
+      <img src={image} />
+      <div>
+        <hgroup>
+          <h2>{title}</h2>
+          <h4>
+            <i>{subtitle}</i>
+          </h4>
+        </hgroup>
+        <p>{description}</p>
+      </div>
+    </>
+  );
+  return link ? (
+    <a className={styles.creation_card} href={link} target="_blank">
+      {children}
+    </a>
+  ) : (
+    <Link href={internalLink!}>
+      <a className={styles.creation_card}>{children}</a>
+    </Link>
+  );
+};
 
 export default CreationCard;
