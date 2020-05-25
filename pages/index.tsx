@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 // import components
 import { Layout, Content } from '../components';
 
@@ -18,9 +19,12 @@ const JoshuaDavid: React.FC = () => (
           I was introduced to programming while in grad school and I was hooked.
           Four years later, I am a software engineer currently focused on
           full-stack Javascript web development. I recently developed and
-          deployed <a href="https://nautilusdev.com">Nautilus</a>, an Electron
-          desktop application built with React and D3 that visualizes a Docker
-          Compose instance.
+          deployed{' '}
+          <Link href="https://nautilusdev.com">
+            <a>Nautilus</a>
+          </Link>
+          , an Electron desktop application built with React and D3 that
+          visualizes a Docker Compose instance.
         </p>
         <p>
           Currently, I'm developing for{' '}
@@ -44,7 +48,10 @@ const JoshuaDavid: React.FC = () => (
         <ul>
           <li>
             The{' '}
-            <a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_blank">
+            <a
+              href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)"
+              target="_blank"
+            >
               LAMP
             </a>{' '}
             tech stack, specifically with PHP.
@@ -53,7 +60,8 @@ const JoshuaDavid: React.FC = () => (
             <a href="https://deno.land/" target="_blank">
               Deno
             </a>{' '}
-            and whether or not it will replace node. My intial thoughts--support for typescript out fo the box is pretty sweet.
+            and whether or not it will replace node. My intial thoughts--support
+            for typescript out fo the box is pretty sweet.
           </li>
           <li>
             <a
