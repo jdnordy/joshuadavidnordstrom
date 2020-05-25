@@ -1,7 +1,7 @@
 ---
 title: 'The Creation of Nautilus'
 coverImage: ''
-date: '2020-05-22'
+date: '2020-05-24'
 author: Joshua David Nordstrom
 ---
 

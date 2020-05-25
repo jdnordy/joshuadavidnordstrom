@@ -21,7 +21,7 @@ const JoshuaDavid: React.FC = () => (
           full-stack Javascript web development. I recently developed and
           deployed{' '}
           <Link href="/writings/nautilus">
-            <a>Nautilus</a>
+            <a className="no_blank">Nautilus</a>
           </Link>
           , an Electron desktop application built with React and D3 that
           visualizes a Docker Compose instance.
