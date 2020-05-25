@@ -20,7 +20,7 @@ const JoshuaDavid: React.FC = () => (
           Four years later, I am a software engineer currently focused on
           full-stack Javascript web development. I recently developed and
           deployed{' '}
-          <Link href="https://nautilusdev.com">
+          <Link href="/writings/nautilus">
             <a>Nautilus</a>
           </Link>
           , an Electron desktop application built with React and D3 that
