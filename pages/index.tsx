@@ -35,11 +35,13 @@ const JoshuaDavid: React.FC = () => (
           containerizing the application with Docker.
         </p>
         <p>
-          <a href="/writings/this-website">This website</a> functions as my
-          personal portfolio and an archive of musings as I continue growing as
-          an engineer--always learning, problem solving, and evolving in accord
-          with the ever changing landscape of web technology. See the code
-          behind the site{' '}
+          <Link href="/writings/this-website">
+            <a className="no_blank">This website</a>
+          </Link>{' '}
+          functions as my personal portfolio and an archive of musings as I
+          continue growing as an engineer--always learning, problem solving, and
+          evolving in accord with the ever changing landscape of web technology.
+          See the code behind the site{' '}
           <a href="https://github.com/jdnordy/joshuadavidnordstrom">here</a>.
         </p>
 
