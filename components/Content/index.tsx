@@ -11,7 +11,7 @@ const Content: React.FC<Props> = ({ content, children }) => {
       .getElementById('content_container')!
       .querySelectorAll('a')
       .forEach((el) => {
-        el.target = '_blank';
+        if (!el.className) el.target = '_blank';
       });
   });
 
