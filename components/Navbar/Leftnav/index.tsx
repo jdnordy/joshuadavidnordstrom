@@ -1,6 +1,6 @@
 import React from 'react';
 // components
-import { Navigator } from '../';
+import Navigator from '../Navigator';
 import navigators from './navigators.config';
 // styles
 import styles from './styles.module.scss';
