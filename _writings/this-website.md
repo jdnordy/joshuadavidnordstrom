@@ -2,6 +2,7 @@
 title: 'This Website'
 subtitle: 'A brief reflection on Next.js and what it took to create this site.'
 coverImage: ''
+ogImage: ''
 date: '2020-05-13'
 author: Joshua David Nordstrom
 ---
