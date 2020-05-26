@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 
-import { Leftnav, Rightnav } from '../';
+import Leftnav from './Leftnav';
+import Rightnav from './Rightnav';
 
 type Props = {
   page: string;

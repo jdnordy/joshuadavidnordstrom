@@ -24,8 +24,14 @@ const aWriting: React.FC<Props> = ({
   coverImage,
   content,
 }) => {
+  const og = {
+    ogTitle: title,
+    ogDescription: subtitle,
+    ogImage: coverImage ? coverImage : '',
+    article: true,
+  };
   return (
-    <Layout page="writings" subPage={title}>
+    <Layout page="writings" subPage={title} og={og}>
       <main className="a_writing">
         <Title {...{ date, title, author, coverImage }} />
         <Content {...{ content }} />
