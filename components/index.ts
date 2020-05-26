@@ -6,6 +6,7 @@ import CreationCard from './CreationCard';
 import Title from './Title';
 import Content from './Content';
 import Navbar from './Navbar';
+import OgTags from './OgTags';
 
 export {
   Leftnav,
@@ -16,4 +17,5 @@ export {
   Title,
   Content,
   Navbar,
+  OgTags,
 };
