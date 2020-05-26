@@ -2,6 +2,7 @@
 title: 'The Creation of Nautilus'
 subtitle: 'The story behind how the Nautilus Application came to be.'
 coverImage: ''
+ogImage: ''
 date: '2020-05-24'
 author: Joshua David Nordstrom
 ---
