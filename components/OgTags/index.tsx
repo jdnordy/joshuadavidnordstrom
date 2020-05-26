@@ -20,7 +20,7 @@ const OgTags: React.FC<Props> = ({
     <Head>
       <meta
         property="og:url"
-        content={'https://jdnordstrom.com' + router.pathname}
+        content={'https://jdnordstrom.com' + router.asPath}
         key="og:url"
       />
       <meta property="og:title" content={ogTitle} key="og:title" />

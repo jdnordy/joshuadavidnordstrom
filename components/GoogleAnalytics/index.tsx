@@ -16,7 +16,7 @@ const GoogleAnalytics: React.FC<Props> = ({ title }) => {
     gtag('js', new Date());
     gtag('config', 'UA-166852828-1', {
       page_title: "${title}",
-      page_path: "${router.pathname}"
+      page_path: "${router.asPath}"
     });
   `;
   return (
