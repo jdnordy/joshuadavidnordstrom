@@ -6,8 +6,9 @@ import { Layout, Content } from '../components';
 const JoshuaDavid: React.FC = () => {
   const og = {
     ogTitle: 'Home',
-    ogDescription: 'A collection of creations by Joshua David Nordstrom.',
-    // ogImage: 'A public archives of creations and writings by a problem solver and perpetual learner.',
+    ogDescription:
+      'A public archives of creations and writings by a problem solver and perpetual learner.',
+    // ogImage: '',
     article: false,
   };
   return (
