@@ -5,9 +5,7 @@ date: '2020-05-13'
 author: Joshua David Nordstrom
 ---
 
-Job hunting during a global pandemic is not easy. I send out 5 applications a day with a custom cover letter and hear back on 1 out of 10, usually a rejection, not even a phone screen. Available, qualified candidates are on the rise and hiring freezes abound.
-
-But amidst all this craziness, the last thing I wanted to avoid distraction. I needed a project to continue growing as an engineer and doing what I love--coding.
+As a software engineer, I'm always looking for new projects to learn from and grow as an engineer.
 
 I recently spoke with a friend from undergrad, Jared Gorski. We talked about web development, his work at Liferay, my work on [Nautilus](https://nautilusdev.com) (a dev tool that visualizes Docker Compose instances). He also started sharing with my how he recently updated his [website](https://jaredgorski.org/) to improve speed. After our conversation, I checked it out and was inspired. I had already been thinking about SSR (server side rendering) and how to leverage it. Thus, the mission to build this website was born.
 
