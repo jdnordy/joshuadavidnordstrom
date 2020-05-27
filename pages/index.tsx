@@ -28,7 +28,7 @@ const JoshuaDavid: React.FC = () => {
             hooked. Four years later, I am a software engineer currently focused
             on full-stack Javascript web development. I recently developed and
             deployed{' '}
-            <Link href="/writings/nautilus">
+            <Link href="/writings/[slug]" as="/writings/nautilus">
               <a className="no_blank">Nautilus</a>
             </Link>
             , an Electron desktop application built with React and D3 that
@@ -43,7 +43,7 @@ const JoshuaDavid: React.FC = () => {
             containerizing the application with Docker.
           </p>
           <p>
-            <Link href="/writings/this-website">
+            <Link href="/writings/[slug]" as="/writings/this-website">
               <a className="no_blank">This website</a>
             </Link>{' '}
             functions as my personal portfolio and an archive of musings as I

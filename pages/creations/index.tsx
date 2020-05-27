@@ -23,8 +23,8 @@ const Works: React.FC = () => {
             height="32"
             fill="none"
             stroke="currentcolor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             strokeWidth="2"
           >
             <path d="M10 9 L3 17 10 25 M22 9 L29 17 22 25 M18 7 L14 27" />

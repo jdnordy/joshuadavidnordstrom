@@ -39,7 +39,7 @@ const CreationCard: React.FC<Props> = ({
       {children}
     </a>
   ) : (
-    <Link href={internalLink!}>
+    <Link href="/writings/[slug]" as={internalLink!}>
       <a className={styles.creation_card}>{children}</a>
     </Link>
   );
