@@ -19,10 +19,12 @@ Whatever the items, keeping them in my mind causes them to get jumbled. As an ex
 
 4. Add a dark mode to this website.
 
-5. Read [The Practice of Programming](https://www.goodreads.com/book/show/1032758.The_Practice_of_Programming) by Brian Kernighan and Rob Pike.
+5. Implement `prev` and `next` buttons for easier navigation through writings.
 
-6. Build a CRUD application in PHP.
+6. Read [The Practice of Programming](https://www.goodreads.com/book/show/1032758.The_Practice_of_Programming) by Brian Kernighan and Rob Pike.
 
-7. Create something with Angular in order to learn the framework.
+7. Build a CRUD application in PHP.
 
-8. Install [Deno](https://deno.land/) and experiment around with it.
+8. Create something with Angular in order to learn the framework.
+
+9. Install [Deno](https://deno.land/) and experiment around with it.
