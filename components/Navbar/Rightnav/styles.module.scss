@@ -49,6 +49,8 @@ $lighter: lighten($text-color, 50);
 #mail {
   padding-top: 2px;
 }
+#rss {
+}
 
 // mobile optimization
 @media (min-width: 320px) and (max-width: 768px) {
@@ -89,5 +91,8 @@ $lighter: lighten($text-color, 50);
 
   #mail {
     padding-top: 2px;
+  }
+
+  #rss {
   }
 }

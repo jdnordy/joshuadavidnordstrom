@@ -1,13 +1,12 @@
 const fs = require('fs');
 const { join } = require('path');
 const matter = require('gray-matter');
-const markdownToHtml = require('./markdownToHtml');
+const marked = require('marked');
 
 const RSS_PATH = join(process.cwd(), 'public/rss.xml');
 const WRITINGS_PATH = join(process.cwd(), '_writings');
 
-(async function () {
-  let header = `<?xml version="1.0" encoding="UTF-8" ?>
+let header = `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0" 
       xmlns:atom="http://www.w3.org/2005/Atom" 
       xmlns:webfeeds="http://webfeeds.org/rss/1.0"
@@ -26,18 +25,25 @@ const WRITINGS_PATH = join(process.cwd(), '_writings');
         <webfeeds:accentColor>b1e9ff</webfeeds:accentColor>
         <language>en-us</language>
   `;
-  writeHeader(RSS_PATH, header);
+writeHeader(RSS_PATH, header);
 
-  const writings = getWritings(WRITINGS_PATH);
+const writings = getWritings(WRITINGS_PATH);
 
-  for (let i = 0; i < writings.length; i++) {
-    const { fileContent, slug } = writings[i];
-    await writeItem(RSS_PATH, fileContent, slug);
-  }
+for (let i = 0; i < writings.length; i++) {
+  const { fileContent, slug } = writings[i];
+  writeItem(RSS_PATH, fileContent, slug);
+}
 
-  writeFooter(RSS_PATH, '</channel></rss>');
-})();
+writeFooter(RSS_PATH, '</channel></rss>');
 
+/**
+ * *************
+ * gets all blog writings
+ * *************
+ * @param {path string to writings folder} WRITINGS_PATH
+ * @returns array of writings objects sorted by pubDate DESC
+ * writings object: { slug: file name, fileContent: parsed markdown }
+ */
 function getWritings(WRITINGS_PATH) {
   return fs
     .readdirSync(WRITINGS_PATH)
@@ -56,19 +62,32 @@ function getWritings(WRITINGS_PATH) {
     );
 }
 
+/**
+ * *************
+ * writes header to rss file
+ * *************
+ * @param {path to rss file} RSS_PATH
+ * @param {rss header to set} header
+ */
 function writeHeader(RSS_PATH, header) {
   fs.writeFileSync(RSS_PATH, header);
 }
 
-async function writeItem(WRITINGS_PATH, fileContent, slug) {
+/**
+ * *************
+ * writes item to rss file
+ * *************
+ * @param {path to writings dir} WRITINGS_PATH
+ * @param {parsed markedown} fileContent
+ * @param {name of writing file} slug
+ */
+function writeItem(WRITINGS_PATH, fileContent, slug) {
   const { data, content } = fileContent;
   const realSlug = slug.replace(/\.md$/, '');
   let item = `<item>`;
   item += `<title>${data.title}</title>`;
   item += `<dc:creator>${data.author}</dc:creator>`;
-  item += `<description><![CDATA[${await markdownToHtml(
-    content,
-  )}]]></description>`;
+  item += `<description><![CDATA[${marked(content)}]]></description>`;
   item += `<pubDate>${new Date(data.date).toString()}</pubDate>`;
   item += `<link>https://jdnordstrom.com/writings/${realSlug}</link>`;
   item += `<guid isPermaLink="true">https://jdnordstrom.com/writings/${realSlug}</guid>`;
@@ -76,6 +95,13 @@ async function writeItem(WRITINGS_PATH, fileContent, slug) {
   fs.appendFileSync(WRITINGS_PATH, item);
 }
 
+/**
+ * *************
+ * appends footer to end of rss file
+ * *************
+ * @param {path to rss file} RSS_PATH
+ * @param {footer for rss xml} footer
+ */
 function writeFooter(RSS_PATH, footer) {
   fs.appendFileSync(RSS_PATH, footer);
 }
