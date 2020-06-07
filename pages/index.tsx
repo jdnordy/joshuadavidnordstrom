@@ -71,7 +71,7 @@ const JoshuaDavid: React.FC = () => {
                 Deno
               </a>{' '}
               and whether or not it will replace node. My intial
-              thoughts--support for typescript out fo the box is pretty sweet.
+              thoughts--support for typescript out of the box is pretty sweet.
             </li>
             <li>
               <a
