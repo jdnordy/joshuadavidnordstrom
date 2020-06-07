@@ -22,7 +22,7 @@ let header = `<?xml version="1.0" encoding="UTF-8" ?>
         <webfeeds:cover image="https://jdnordstrom.com/joshua_og.jpeg"/>
         <webfeeds:icon>https://jdnordstrom.com/logo_v6.png</webfeeds:icon>
         <webfeeds:logo>https://jdnordstrom.com/logo_v6.png</webfeeds:logo>
-        <webfeeds:accentColor>b1e9ff</webfeeds:accentColor>
+        <webfeeds:accentColor>0004fa</webfeeds:accentColor>
         <language>en-us</language>
   `;
 writeHeader(RSS_PATH, header);
