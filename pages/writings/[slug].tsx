@@ -1,11 +1,11 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import marked from 'marked';
 // components
 import { Layout, Title, Content } from '../../components';
 import Link from 'next/link';
 // api
 import { getWritingBySlug, getAllWritings } from '../../lib/api';
-import markdownToHtml from '../../lib/markdownToHtml';
 
 type Props = {
   title: string;
@@ -55,7 +55,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     'coverImage',
   ];
   const writing = getWritingBySlug(params?.slug as string, fields);
-  const content = await markdownToHtml(writing.content);
+  const content = marked(writing.content as string);
   return {
     props: {
       ...writing,
