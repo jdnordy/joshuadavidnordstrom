@@ -88,7 +88,7 @@ function writeItem(WRITINGS_PATH, fileContent, slug) {
   item += `<title>${data.title}</title>`;
   item += `<dc:creator>${data.author}</dc:creator>`;
   item += `<description><![CDATA[${marked(content)}]]></description>`;
-  item += `<pubDate>${new Date(data.date).toString()}</pubDate>`;
+  item += `<pubDate>${new Date(data.date).toUTCString()}</pubDate>`;
   item += `<link>https://jdnordstrom.com/writings/${realSlug}</link>`;
   item += `<guid isPermaLink="true">https://jdnordstrom.com/writings/${realSlug}</guid>`;
   item += `</item>`;
