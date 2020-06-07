@@ -19,6 +19,12 @@ class MyDocument extends Document {
             content="joshua, david, nordstrom, software, engineer, web, developer, dev, programmer, creations, writings, archives"
           />
           <link rel="icon" type="image/png" href="/logo_v6.png" />
+          <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="RSS for writings posts"
+            href="https://jdnordstrom.com/rss.xml"
+          />
         </Head>
         <body>
           <Main />
