@@ -11,9 +11,9 @@ As a programmer, my mind always has a running to do list. The items on the list 
 
 Whatever the items, keeping them in my mind causes them to get jumbled. As an exercise, I've decided every so often to write my current to do list here.
 
-1. Add an RSS feed for the writings section of this website.
+1. ~~Add an RSS feed for the writings section of this website.~~
 
-2. Start consuming RSS feeds by setting up a feed reader and curating choice content from other sites.
+2. ~~Start consuming RSS feeds by setting up a feed reader and curating choice content from other sites.~~
 
 3. Write about my journey to becoming a programmer.
 
