@@ -19,7 +19,7 @@ Whatever the items, keeping them in my mind causes them to get jumbled. As an ex
 
 4. Add a dark mode to this website.
 
-5. Implement `prev` and `next` buttons for easier navigation through writings.
+5. ~~Implement `prev` and `next` buttons for easier navigation through writings.~~
 
 6. Read [The Practice of Programming](https://www.goodreads.com/book/show/1032758.The_Practice_of_Programming) by Brian Kernighan and Rob Pike.
 
@@ -27,4 +27,4 @@ Whatever the items, keeping them in my mind causes them to get jumbled. As an ex
 
 8. Create something with Angular in order to learn the framework.
 
-9. Install [Deno](https://deno.land/) and experiment around with it.
+9. ~~Install [Deno](https://deno.land/) and experiment around with it.~~
