@@ -42,8 +42,8 @@
 .a_writing {
   footer {
     margin-top: 3.5em;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   a {
     color: $text-color;
@@ -51,6 +51,15 @@
     text-decoration: underline;
     &:hover {
       color: lighten($blue, 25);
+    }
+    &#all_writings {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      justify-self: center;
+    }
+    &#next_writing {
+      grid-column-start: 3;
+      justify-self: flex-end;
     }
   }
 }

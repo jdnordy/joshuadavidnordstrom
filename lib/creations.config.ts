@@ -21,7 +21,7 @@ const creationsList: CreationsList = [
     title: 'SnapDesk',
     subtitle: 'Foster Collaboration among Teams',
     image: '/snapdesk_logo_c.svg',
-    link: 'https://github.com/Just5Coders/snapdesk_1',
+    link: 'https://github.com/team-snapdesk/snapdesk',
     internalLink: null,
     description:
       'Conveniently ask co-workers for help by posting tickets with a snap rating and topic to the SnapDesk help board. Fellow workers can accept tickets and recieve snaps for helping out.',
