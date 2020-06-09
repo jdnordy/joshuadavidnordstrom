@@ -48,7 +48,12 @@ const aWriting: React.FC<Props> = ({
         <footer>
           {prev && (
             <Link href="/writings/[slug]" as={`/writings/${prev.slug}`}>
-              <a id="prev_writing">&laquo;{prev.title.toLowerCase()}</a>
+              <a id="prev_writing">
+                &laquo;
+                {prev.title.length <= 25
+                  ? prev.title.toLowerCase()
+                  : prev.title.toLowerCase().slice(0, 24).concat('...')}
+              </a>
             </Link>
           )}
           <Link href="/writings">
@@ -56,7 +61,12 @@ const aWriting: React.FC<Props> = ({
           </Link>
           {next && (
             <Link href="/writings/[slug]" as={`/writings/${next.slug}`}>
-              <a id="next_writing">{next.title.toLowerCase()}&raquo;</a>
+              <a id="next_writing">
+                {next.title.length <= 25
+                  ? next.title.toLowerCase()
+                  : next.title.toLowerCase().slice(0, 24).concat('...')}
+                &raquo;
+              </a>
             </Link>
           )}
         </footer>
