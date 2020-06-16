@@ -15,7 +15,7 @@ Whatever the items, keeping them in my mind causes them to get jumbled. As an ex
 
 2. ~~Start consuming RSS feeds by setting up a feed reader and curating choice content from other sites.~~
 
-3. Write about my journey to becoming a programmer.
+3. ~~Write about my journey to becoming a programmer.~~
 
 4. Add a dark mode to this website.
 
@@ -25,6 +25,6 @@ Whatever the items, keeping them in my mind causes them to get jumbled. As an ex
 
 7. Build a CRUD application in PHP.
 
-8. Create something with Angular in order to learn the framework.
+8. Create something with Vue in order to learn the framework.
 
 9. ~~Install [Deno](https://deno.land/) and experiment around with it.~~
