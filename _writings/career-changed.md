@@ -71,7 +71,7 @@ I just keep chugging along. I found ways to sustain myself and my drive for prog
 
 Also, I continued to work personal projects. I built [this website](https://jdnordstrom.com/writings/this-website) that functions as a portfolio/blogger. I learned PHP by building a CMS under the guidance of an online course. I got involved in working on a friends web application called [winebud](https://www.winebud.com/). All of these projects allowed me to do what I love while I continued to apply to jobs. I kept a regular work schedule working from 9 to 5 on job apps and personal projects. It was hard, self-motivated work. And it all paid off.
 
-After about a month and a half job hunting, I landed a job with [Green Street Advisors](https://www.greenstreetadvisors.com/) working on the external web team. I couldn't be more excited about this opportunity and the company. The team is filled with bright engineers who love what they do and are excited by building cool stuff. It's a collaborative work environment where I'll be able to learn from experienced engineers and contribute from my skill set.
+After about a month and a half job hunting, I landed a job with Green Street Advisors working on the external web team. I couldn't be more excited about this opportunity and the company. The team is filled with bright engineers who love what they do and are excited by building cool stuff. It's a collaborative work environment where I'll be able to learn from experienced engineers and contribute from my skill set.
 
 I signed the contract on Friday, June 5th and now I anxiously await my start date of July 6th. My sister-in-law's words describe how I felt, "And just like that, career changed."
 
