@@ -63,9 +63,10 @@ const Writings: React.FC<Props> = ({ writings }) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const fields = ['title', 'author', 'date', 'slug'];
+  const exclude = ['about'];
   return {
     props: {
-      writings: getAllWritings(fields),
+      writings: getAllWritings(fields, exclude),
     },
   };
 };
