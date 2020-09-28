@@ -6,7 +6,7 @@ import matter from 'gray-matter';
 const writingsDirectory = join(process.cwd(), '_writings');
 
 export function getWritingSlugs() {
-  return fs.readdirSync(writingsDirectory);
+  return fs.readdirSync(writingsDirectory).map(fileName => fileName.replace(/\.md$/, ''));
 }
 
 interface GetWritingBySlug {
@@ -18,16 +18,14 @@ export type Items = {
 };
 
 export const getWritingBySlug: GetWritingBySlug = (slug, fields = []) => {
-  // handle gathering slugs from fs readdirSync
-  const realSlug = slug.replace(/\.md$/, '');
-  const writingPath = join(writingsDirectory, `${realSlug}.md`);
+  const writingPath = join(writingsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(writingPath, 'utf8');
   const { data, content } = matter(fileContents);
 
   const items: Items = {};
 
   fields.forEach((f) => {
-    if (f === 'slug') items[f] = realSlug;
+    if (f === 'slug') items[f] = slug;
     else if (f === 'content') items[f] = content;
     else if (data[f]) items[f] = data[f];
   });
@@ -36,10 +34,10 @@ export const getWritingBySlug: GetWritingBySlug = (slug, fields = []) => {
 };
 
 interface GetAllWritings {
-  (fields: string[]): Array<Items>;
+  (fields: string[], exclude?: string[]): Array<Items>;
 }
 
-export const getAllWritings: GetAllWritings = (fields = []) => {
-  const slugs = getWritingSlugs();
+export const getAllWritings: GetAllWritings = (fields = [], exclude = ['about']) => {
+  const slugs = getWritingSlugs().filter(slug => !exclude.includes(slug));
   return slugs.map((slug) => getWritingBySlug(slug, fields));
 };

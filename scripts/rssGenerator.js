@@ -27,7 +27,8 @@ let header = `<?xml version="1.0" encoding="UTF-8" ?>
   `;
 writeHeader(RSS_PATH, header);
 
-const writings = getWritings(WRITINGS_PATH);
+const exclude = ['about.md'];
+const writings = getWritings(WRITINGS_PATH, exclude);
 
 for (let i = 0; i < writings.length; i++) {
   const { fileContent, slug } = writings[i];
@@ -44,9 +45,10 @@ writeFooter(RSS_PATH, '</channel></rss>');
  * @returns array of writings objects sorted by pubDate DESC
  * writings object: { slug: file name, fileContent: parsed markdown }
  */
-function getWritings(WRITINGS_PATH) {
+function getWritings(WRITINGS_PATH, exclude = []) {
   return fs
     .readdirSync(WRITINGS_PATH)
+    .filter(fileName => !exclude.includes(fileName))
     .map((file) => {
       const pathToWriting = join(WRITINGS_PATH, file);
       const fileContent = fs.readFileSync(pathToWriting);
