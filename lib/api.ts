@@ -37,7 +37,7 @@ interface GetAllWritings {
   (fields: string[], exclude?: string[]): Array<Items>;
 }
 
-export const getAllWritings: GetAllWritings = (fields = [], exclude = []) => {
+export const getAllWritings: GetAllWritings = (fields = [], exclude = ['about']) => {
   const slugs = getWritingSlugs().filter(slug => !exclude.includes(slug));
   return slugs.map((slug) => getWritingBySlug(slug, fields));
 };
