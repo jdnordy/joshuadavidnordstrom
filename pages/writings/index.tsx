@@ -1,4 +1,3 @@
-import React from 'react';
 // components
 import { Layout } from '../../components';
 import Link from 'next/link';
