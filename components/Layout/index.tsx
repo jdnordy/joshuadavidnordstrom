@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 // COMPONENETS
 import { Navbar, OgTags, GoogleAnalytics } from '../';

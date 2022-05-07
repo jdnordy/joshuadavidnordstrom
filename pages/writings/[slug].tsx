@@ -1,4 +1,3 @@
-import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
 import marked from 'marked';
 // components

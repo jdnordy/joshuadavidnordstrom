@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Layout, CreationCard } from '../../components';
 
 import creations from '../../lib/creations.config';

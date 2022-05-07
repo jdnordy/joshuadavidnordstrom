@@ -1,7 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
 import marked from 'marked';
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticProps } from 'next';
 
 import { getWritingBySlug } from '../lib/api';
 // import components

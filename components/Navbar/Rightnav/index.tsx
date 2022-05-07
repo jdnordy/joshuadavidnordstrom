@@ -1,5 +1,3 @@
-import React from 'react';
-// import Link from "next/link";
 // styles
 import styles from './styles.module.scss';
 
