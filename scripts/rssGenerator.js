@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { join } = require('path');
 const matter = require('gray-matter');
-const marked = require('marked');
+const { marked } = require('marked');
 
 const RSS_PATH = join(process.cwd(), 'public/rss.xml');
 const WRITINGS_PATH = join(process.cwd(), '_writings');
@@ -89,7 +89,7 @@ function writeItem(WRITINGS_PATH, fileContent, slug) {
   let item = `<item>`;
   item += `<title>${data.title}</title>`;
   item += `<dc:creator>${data.author}</dc:creator>`;
-  item += `<description><![CDATA[${marked(content)}]]></description>`;
+  item += `<description><![CDATA[${marked.parse(content)}]]></description>`;
   item += `<pubDate>${new Date(data.date).toUTCString()}</pubDate>`;
   item += `<link>https://jdnordstrom.com/writings/${realSlug}</link>`;
   item += `<guid isPermaLink="true">https://jdnordstrom.com/writings/${realSlug}</guid>`;
