@@ -1,4 +1,4 @@
-import marked from 'marked';
+import { marked } from 'marked';
 import { GetStaticProps } from 'next';
 
 import { getWritingBySlug } from '../lib/api';
@@ -37,7 +37,7 @@ const JoshuaDavid: React.FC<Props> = ({ content }) => {
 export const getStaticProps: GetStaticProps = async () => {
     const { content } = getWritingBySlug('about', ['content']);
     return {
-        props: { content: marked(content as string) }
+        props: { content: marked.parse(content as string) }
     }
 }
 

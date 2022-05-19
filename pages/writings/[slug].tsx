@@ -1,5 +1,5 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
-import marked from 'marked';
+import { marked } from 'marked';
 // components
 import { Layout, Title, Content } from '../../components';
 import Link from 'next/link';
@@ -95,7 +95,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     'coverImage',
   ];
   const writing = getWritingBySlug(params?.slug as string, fields);
-  const content = marked(writing.content as string);
+  const content = marked.parse(writing.content as string);
   return {
     props: {
       ...writing,

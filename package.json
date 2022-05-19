@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "next": "12",
     "node-fetch": "^2.6.1",
     "react": "^17.0.2",
@@ -24,7 +24,7 @@
     "sass": "^1.26.5"
   },
   "devDependencies": {
-    "@types/marked": "^0.7.4",
+    "@types/marked": "^4.0.3",
     "@types/node": "^13.13.4",
     "@types/react": "^17.0.45",
     "@typescript-eslint/eslint-plugin": "^2.30.0",
