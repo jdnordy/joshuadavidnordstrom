@@ -7,8 +7,6 @@ date: '2022-06-27'
 author: Joshua David Nordstrom
 ---
 
-# Why Am I Not Coding Outside Work?
-
 It's not always the case. I have spent my free time coding on personal projects. Just not right now. 
 
 It's been since I started working at Amazon. Before I left my previous company, I was overflowing with ideas for software projects. Some were non-starters; others, worthy of work. For example, I converted my old 2011 MacBook Pro into a PostgreSQL and web server to run an app on my home network. Then, as soon as I started at Amazon, I stopped. The server and code repo have remained untouched.
