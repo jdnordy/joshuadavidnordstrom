@@ -43,16 +43,20 @@ const Writings: React.FC<Props> = ({ writings }) => {
                 Date.parse(b.date as string) - Date.parse(a.date as string),
             )
             .map((w, i) => (
-              <Link href="/writings/[slug]" as={`/writings/${w.slug}`} key={i}>
-                <a className="writing_link">
-                  <li>
-                    <div>
-                      <span>{w.title}</span>
-                      <i>{w.date}</i>
-                    </div>
-                  </li>
-                </a>
-              </Link>
+              (<Link
+                href="/writings/[slug]"
+                as={`/writings/${w.slug}`}
+                key={i}
+                className="writing_link">
+
+                <li>
+                  <div>
+                    <span>{w.title}</span>
+                    <i>{w.date}</i>
+                  </div>
+                </li>
+
+              </Link>)
             ))}
         </ol>
       </main>

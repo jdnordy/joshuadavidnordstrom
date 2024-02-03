@@ -1,4 +1,4 @@
-import '../styles/index.scss';
+import 'styles/index.scss';
 import Head from 'next/head'
 
 type Props = {

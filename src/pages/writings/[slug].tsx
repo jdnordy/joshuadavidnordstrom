@@ -46,27 +46,23 @@ const aWriting: React.FC<Props> = ({
         <Content {...{ content }} />
         <footer>
           {prev && (
-            <Link href="/writings/[slug]" as={`/writings/${prev.slug}`}>
-              <a id="prev_writing">
-                &laquo;
-                {prev.title.length <= 25
-                  ? prev.title.toLowerCase()
-                  : prev.title.toLowerCase().slice(0, 24).concat('...')}
-              </a>
-            </Link>
+            (<Link href="/writings/[slug]" as={`/writings/${prev.slug}`} id="prev_writing">
+              «{prev.title.length <= 25
+                ? prev.title.toLowerCase()
+                : prev.title.toLowerCase().slice(0, 24).concat('...')}
+
+            </Link>)
           )}
-          <Link href="/writings">
-            <a id="all_writings">all writings</a>
+          <Link href="/writings" id="all_writings">
+            all writings
           </Link>
           {next && (
-            <Link href="/writings/[slug]" as={`/writings/${next.slug}`}>
-              <a id="next_writing">
-                {next.title.length <= 25
-                  ? next.title.toLowerCase()
-                  : next.title.toLowerCase().slice(0, 24).concat('...')}
-                &raquo;
-              </a>
-            </Link>
+            (<Link href="/writings/[slug]" as={`/writings/${next.slug}`} id="next_writing">
+
+              {next.title.length <= 25
+                ? next.title.toLowerCase()
+                : next.title.toLowerCase().slice(0, 24).concat('...')}»
+            </Link>)
           )}
         </footer>
       </main>

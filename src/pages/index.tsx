@@ -1,9 +1,9 @@
 import { marked } from 'marked';
 import { GetStaticProps } from 'next';
 
-import { getWritingBySlug } from '../lib/api';
+import { getWritingBySlug } from 'lib/api';
 // import components
-import { Layout, Content } from '../components';
+import { Layout, Content } from 'components';
 
 type Props = {
     content: string

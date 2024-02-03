@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // COMPONENETS
-import { Navbar, OgTags, GoogleAnalytics } from '../';
+import { Navbar, OgTags, GoogleAnalytics } from '..';
 // STYLES
 import styles from './styles.module.scss';
 

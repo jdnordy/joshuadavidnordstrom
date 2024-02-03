@@ -18,7 +18,8 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "src/"
   },
   "exclude": [
     "node_modules"
