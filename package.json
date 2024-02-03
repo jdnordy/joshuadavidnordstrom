@@ -6,13 +6,16 @@
   "repository": "https://github.com/jdnordy/joshuadavidnordstrom.git",
   "author": "Joshua Nordstrom <jdnordy@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "npm": "10"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "export": "next export",
     "rss": "node scripts/rssGenerator.js",
-    "vercel_deploy": "yarn rss && next build && next export"
+    "vercel_deploy": "npm rss && next build && next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
