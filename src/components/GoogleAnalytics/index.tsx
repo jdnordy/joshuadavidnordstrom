@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-type Props = {
+interface GoogleAnalyticsProps {
   title: string;
-};
+}
 
-const GoogleAnalytics: React.FC<Props> = ({ title }) => {
+const GoogleAnalytics = ({ title }: GoogleAnalyticsProps) => {
   const router = useRouter();
   const google = `
     window.dataLayer = window.dataLayer || [];

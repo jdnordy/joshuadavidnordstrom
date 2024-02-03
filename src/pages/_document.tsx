@@ -1,14 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
-          <script
+          <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-166852828-1"
-          ></script>
+          />
           <link rel="icon" type="image/png" href="/logo_v6.png" />
           <link
             rel="alternate"

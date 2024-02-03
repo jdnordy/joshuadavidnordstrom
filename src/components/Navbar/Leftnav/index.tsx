@@ -4,11 +4,11 @@ import navigators from './navigators.config';
 // styles
 import styles from './styles.module.scss';
 
-type Props = {
+interface LeftnavProps {
   page: string;
-};
+}
 
-const Leftnav: React.FC<Props> = ({ page }) => (
+const Leftnav = ({ page }: LeftnavProps) => (
   <nav className={styles.leftnav}>
     {navigators.map((el, i) => (
       <Navigator selected={el.value === page} {...el} key={i} />

@@ -4,18 +4,20 @@ import styles from './styles.module.scss';
 import Leftnav from './Leftnav';
 import Rightnav from './Rightnav';
 
-type Props = {
+interface NavbarProps {
   page: string;
-};
+}
 
-const Navbar: React.FC<Props> = ({ page }) => {
+const Navbar = ({ page }: NavbarProps) => {
+  // STATE
+  const [leftnavShow, setLeftnavShow] = useState(false);
+  const [rightnavShow, setRightnavShow] = useState(false);
+  
   /**
    * ******************
    * TOGGLE THE LEFTNAV ON MOBILE
    * ******************
    */
-  // state to control the leftnav
-  const [leftnavShow, setLeftnavShow] = useState(false);
   // function to toggle leftnav on click
   const toggleLeftnav = () => {
     setLeftnavShow(!leftnavShow);
@@ -41,7 +43,7 @@ const Navbar: React.FC<Props> = ({ page }) => {
       backdrop.classList.add(styles.backdrop_view);
       document.querySelector('body')!.style.overflow = 'hidden';
     }
-  }, [leftnavShow]);
+  }, [leftnavShow, rightnavShow]);
 
   /**
    * ******************
@@ -49,7 +51,6 @@ const Navbar: React.FC<Props> = ({ page }) => {
    * ******************
    */
   // state to control the rightnav
-  const [rightnavShow, setRightnavShow] = useState(false);
   // function to toggle leftnav on click
   const toggleRightnav = () => {
     setRightnavShow(!rightnavShow);
@@ -81,7 +82,7 @@ const Navbar: React.FC<Props> = ({ page }) => {
       backdrop.classList.add(styles.backdrop_view);
       document.querySelector('body')!.style.overflow = 'hidden';
     }
-  }, [rightnavShow]);
+  }, [leftnavShow, rightnavShow]);
 
   const backdropClick = () => {
     if (leftnavShow) setLeftnavShow(false);

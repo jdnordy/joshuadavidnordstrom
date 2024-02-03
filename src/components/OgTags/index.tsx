@@ -1,19 +1,19 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-type Props = {
+interface OgTagsProps {
   ogTitle: string;
   ogDescription: string;
   ogImage?: string;
   article: boolean;
-};
+}
 
-const OgTags: React.FC<Props> = ({
+const OgTags = ({
   ogTitle,
   ogDescription,
   ogImage,
   article,
-}) => {
+}: OgTagsProps) => {
   const router = useRouter();
   return (
     <Head>

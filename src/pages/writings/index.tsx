@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { getAllWritings, Items } from '../../lib/api';
 import { GetStaticProps } from 'next';
 
-type Props = {
+interface WritingsProps {
   writings: Array<Items>;
-};
+}
 
-const Writings: React.FC<Props> = ({ writings }) => {
+const Writings = ({ writings }: WritingsProps) => {
   const og = {
     ogTitle: 'Writings',
     ogDescription: 'A collection of writings by Joshua David Nordstrom.',

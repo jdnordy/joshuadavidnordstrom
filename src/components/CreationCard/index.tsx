@@ -1,27 +1,28 @@
 import Link from 'next/link';
+import Image from 'next/image';
 // styles
 import styles from './styles.module.scss';
 
-type Props = {
+interface CreationCardProps {
   title: string;
   subtitle: string;
   image: string;
   description: string;
   link: string | null;
   internalLink: string | null;
-};
+}
 
-const CreationCard: React.FC<Props> = ({
+const CreationCard = ({
   title,
   subtitle,
   image,
   description,
   link,
   internalLink,
-}) => {
+}: CreationCardProps) => {
   const children = (
     <>
-      <img src={image} />
+      <Image src={image} alt="Loading image..."/>
       <div>
         <hgroup>
           <h2>{title}</h2>
@@ -34,7 +35,7 @@ const CreationCard: React.FC<Props> = ({
     </>
   );
   return link ? (
-    <a className={styles.creation_card} href={link} target="_blank">
+    <a className={styles.creation_card} href={link} target="_blank" rel="noreferrer">
       {children}
     </a>
   ) : (

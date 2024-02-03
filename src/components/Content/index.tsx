@@ -3,9 +3,10 @@ import styles from './styles.module.scss';
 
 type Props = {
   content: string;
+  children?: React.ReactNode;
 };
 
-const Content: React.FC<Props> = ({ content, children }) => {
+const Content = ({ content, children }: Props) => {
   useEffect(() => {
     document
       .getElementById('content_container')!

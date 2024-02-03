@@ -1,12 +1,8 @@
 import 'styles/index.scss';
-import Head from 'next/head'
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
 
-type Props = {
-  Component: any;
-  pageProps: {};
-};
-
-const MyApp: React.FC<Props> = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>

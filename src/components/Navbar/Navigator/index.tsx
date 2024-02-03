@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 import styles from './styles.module.scss';
 
-type Props = {
+interface NavigatorProps {
   link: string;
   selected: boolean;
   label: string;
-};
+}
 
-const Navigator: React.FC<Props> = ({ link, selected, label }) => (
+const Navigator = ({ link, selected, label }: NavigatorProps) => (
   (<Link
     href={link}
     className={styles.navigator}

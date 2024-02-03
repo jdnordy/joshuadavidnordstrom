@@ -1,15 +1,16 @@
 import { marked } from 'marked';
 import { GetStaticProps } from 'next';
+import Image from 'next/image';
 
 import { getWritingBySlug } from 'lib/api';
 // import components
 import { Layout, Content } from 'components';
 
-type Props = {
-    content: string
+interface JoshuaDavidProps {
+  content: string
 }
 
-const JoshuaDavid: React.FC<Props> = ({ content }) => {
+const JoshuaDavid = ({ content }: JoshuaDavidProps) => {
   const og = {
     ogTitle: 'Home',
     ogDescription:
@@ -21,7 +22,7 @@ const JoshuaDavid: React.FC<Props> = ({ content }) => {
     <Layout page="joshua" og={og}>
       <main className="joshua">
         <header>
-          <img src="/joshua.jpeg" />
+          <Image src="/joshua.jpeg" alt="loading image..."/>
           <div>
             <h1>JOSHUA</h1>
             <h1>DAVID</h1>

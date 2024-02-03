@@ -1,15 +1,16 @@
+import Image from 'next/image';
 import styles from './styles.module.scss';
 
-type Props = {
+interface TitleProps {
   title: string;
   date: string;
   author: string;
   coverImage?: string;
-};
+}
 
-const Title: React.FC<Props> = ({ title, date, author, coverImage }) => (
+const Title = ({ title, date, author, coverImage }: TitleProps) => (
   <header className={styles.title}>
-    {coverImage && <img src={coverImage} />}
+    {coverImage && <Image src={coverImage} alt="loading cover image..."/>}
     <h1>{title.toUpperCase()}</h1>
     <div>
       <i>by {author.toLowerCase()}</i>

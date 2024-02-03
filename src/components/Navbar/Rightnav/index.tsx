@@ -1,13 +1,12 @@
 // styles
 import styles from './styles.module.scss';
 
-type Props = {};
-const Rightnav: React.FC<Props> = () => {
+const Rightnav = () => {
   return (
     <nav className={styles.rightnav}>
       <div>
         {/* svgs from https://github.com/danklammer/bytesize-icons*/}
-        <a href="mailto:joshua@jdnordstrom.com" target="_blank">
+        <a href="mailto:joshua@jdnordstrom.com" target="_blank" rel="noreferrer">
           <svg
             id={styles.mail}
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +22,7 @@ const Rightnav: React.FC<Props> = () => {
             <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6" />
           </svg>
         </a>
-        <a href="https://github.com/jdnordy" target="_blank">
+        <a href="https://github.com/jdnordy" target="_blank" rel="noreferrer">
           <svg
             id={styles.github}
             xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +37,7 @@ const Rightnav: React.FC<Props> = () => {
             />
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/jdnordy/" target="_blank">
+        <a href="https://www.linkedin.com/in/jdnordy/" target="_blank" rel="noreferrer">
           <svg
             id={styles.linkedin}
             xmlns="http://www.w3.org/2000/svg"
