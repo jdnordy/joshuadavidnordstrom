@@ -15,7 +15,7 @@
     "start": "next start",
     "export": "next export",
     "rss": "node scripts/rssGenerator.js",
-    "vercel_deploy": "npm rss && next build && next export"
+    "vercel_deploy": "npm run rss && next build && next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
