@@ -22,7 +22,7 @@ const JoshuaDavid = ({ content }: JoshuaDavidProps) => {
     <Layout page="joshua" og={og}>
       <main className="joshua">
         <header>
-          <Image src="/joshua.jpeg" alt="loading image..."/>
+          <img src="/joshua.jpeg" alt="loading image..."></img>
           <div>
             <h1>JOSHUA</h1>
             <h1>DAVID</h1>

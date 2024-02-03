@@ -1,5 +1,5 @@
 // components
-import { Layout } from '../../components';
+import { Layout } from 'components';
 import Link from 'next/link';
 // api functions
 import { getAllWritings, Items } from '../../lib/api';
